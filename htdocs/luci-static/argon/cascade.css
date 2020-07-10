@@ -348,8 +348,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #32325d;
-  color: var(--gray-dark);
 }
 .h1,
 .h2,
@@ -614,7 +612,7 @@ small {
 .main-right > #maincontent {
   position: relative;
   z-index: 50;
-  margin-top: -13rem;
+  margin-top: -12rem;
 }
 .pull-right {
   float: right;
@@ -631,7 +629,7 @@ small {
 header {
   color: #fff;
   color: var(--header-color);
-  padding: 0 0 11rem 0;
+  padding: 0 0 12rem 0;
 }
 header.bg-primary {
   background-color: #5A8DEE !important;
@@ -1396,6 +1394,8 @@ td > table > tbody > tr > td,
    transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
 	margin-bottom:10px;
+	  padding-left: 1rem;
+  background-color: #fff;
 }
 .cbi-tabmenu > li:hover {
   background-color: rgba(246,178,181,0.2);
@@ -1406,10 +1406,6 @@ td > table > tbody > tr > td,
 }
 .cbi-tabmenu > li[class~="cbi-tab"] a {
   color: #ee6e73;
-}
-.cbi-tabmenu {
-  padding-left: 1rem;
-  background-color: none;
 }
 .cbi-section .cbi-section-remove:nth-of-type(2n),
 .container > .cbi-section .cbi-section-node:nth-of-type(2n) {
@@ -2633,6 +2629,7 @@ input[name="nslookup"] {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
    transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
+	background:#fff;
 }
 [data-page="admin-system-flash"] legend {
   display: block !important;
@@ -3220,5 +3217,34 @@ webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12)
 }
 .memory .cbi-progressbar > div{
 	background-color: #FDAC41 !important;
+}
+.cbi-map .cbi-section:first-of-type{
+	box-shadow:none !important;
+	display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 1rem 0;
+	background:none;
+}
+.cbi-map .cbi-section:first-of-type p font{
+position: relative;
+    display: inline-block;
+    padding: 0 1rem;
+	color:#fff;
+}
+.cbi-map .cbi-section:first-of-type p font:before, .cbi-map .cbi-section:first-of-type p font:after {
+    border-color: #FDAC41 !important;
+	content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    border-top: 2px solid #DFE3E7;
+}
+.cbi-map .cbi-section:first-of-type p font:before {
+    right: 100%;
+}
+.cbi-map .cbi-section:first-of-type p font:after {
+    left: 100%;
 }
 /*# sourceMappingURL=./cascade.css.map */
