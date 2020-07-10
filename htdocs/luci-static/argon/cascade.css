@@ -692,7 +692,10 @@ header .fill .status * {
 }
 .notice {
   background-color: #11cdef !important;
-  color: #fff;
+  div > table > tbody > tr:nth-of-type(3n),
+div > .table > .tr:nth-of-type(3n) {
+  background-color: #e5effd;
+}
 }
 .error {
   color: #f00;
@@ -1145,9 +1148,17 @@ tr > th,
 .cbi-section-table-row .td {
   text-align: center !important;
 }
+div > table > tbody > tr,
+div > .table > .tr {
+  background-color: #e5effd;
+}
 div > table > tbody > tr:nth-of-type(2n),
 div > .table > .tr:nth-of-type(2n) {
-  background-color: #e5effd;
+ background-color: #fff;
+}
+div > table > tbody > tr:nth-of-type(3n),
+div > .table > .tr:nth-of-type(3n) {
+  background-color: rgba(223, 56, 18, 0.05);
 }
 /* fix multiple table */
 table table,
