@@ -2353,6 +2353,7 @@ input[name="nslookup"] {
 }
 .node-main-login .main .main-right {
   width: 100%;
+  text-align:center;
 }
 .node-main-login .main .main-right header {
   background: none !important;
@@ -2383,17 +2384,21 @@ input[name="nslookup"] {
   margin-top: 0rem;
   background-color: transparent !important;
   text-align: center;
+  display:inline-block;
+  position:relative;
+  z-index:999;
 }
 .node-main-login .main .main-right #maincontent .container {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 1.2rem;
   position: relative;
   margin-top: 2rem !important;
  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
   text-align: left;
-  background:#fff;
+  background:#faf5f3cc;
+  margin:0;
 }
 .node-main-login .main .main-right #maincontent .container .alert-message.warning {
   position: absolute;
@@ -2431,13 +2436,13 @@ input[name="nslookup"] {
   height: auto;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map h2 {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   color: #fff;
   text-align: center;
   letter-spacing: 4px;
   display: block;
-  margin: -80px auto 15px auto;
+  margin: -63px auto 15px auto;
   padding: 0;
   text-indent: -500px;
   overflow: hidden;
@@ -2446,11 +2451,13 @@ input[name="nslookup"] {
   background-image: url(head-icon.jpg);
   background-size: cover;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+  opacity: 0.8;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-map-descr {
   text-align: center;
   padding: 1rem;
   color: #8898aa;
+  font-size:1.2rem;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section {
   padding: 0.5rem;
@@ -2474,7 +2481,7 @@ input[name="nslookup"] {
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value .cbi-value-field {
   position: relative;
-  width: 20rem;
+  width: 18rem;
   margin-bottom: 1em;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value .cbi-value-field input {
@@ -2486,17 +2493,21 @@ input[name="nslookup"] {
   padding: 0.625rem 0.75rem;
   transition: all 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   color: #8898aa;
-  background-color: #fff;
+
   background-clip: padding-box;
   box-sizing: border-box;
   padding-left: 3em !important;
   margin: 0;
+  text-align: center;
+    text-indent: -3rem;
+	background: transparent content-box !important;
+    box-sizing: border-box;
+    height: 0 !important;
+    padding: 1.38rem 0;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value .cbi-value-field input:focus {
   color: #8898aa;
   outline: 0;
-  background-color: #fff;
-  box-shadow: 0 3px 9px rgba(50, 50, 9, 0), 3px 4px 8px rgba(94, 114, 228, 0.1);
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value .cbi-value-field:before {
   font-family: 'argon' !important;
@@ -2515,6 +2526,7 @@ input[name="nslookup"] {
   left: 10px;
   top: 10px;
 }
+
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value.cbi-value-last .cbi-value-field:before {
   content: "\e910";
 }
@@ -3469,4 +3481,23 @@ position:relative;
 #indicators{
  cursor: pointer;
 }
-/*# sourceMappingURL=./cascade.css.map */
+canvas {
+  position: absolute;
+width: 100%;
+  height: 100%;
+  top:0;
+  right:0;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+	right:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 99;
+}
