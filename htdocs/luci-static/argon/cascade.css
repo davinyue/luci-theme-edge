@@ -1275,10 +1275,7 @@ td > table > tbody > tr > td,
 .cbi-button-neutral[onclick="handleConfig(event)"] {
   font-weight: normal;
   color: #fff;
-  border: thin solid #5A8DEE;
-  border: thin solid #5A8DEE;
-  background-color: #5A8DEE;
-  background-color: #5A8DEE;
+  background-color: #23bd70;
 }
 /* light blue */
 .cbi-page-actions .cbi-button-apply,
