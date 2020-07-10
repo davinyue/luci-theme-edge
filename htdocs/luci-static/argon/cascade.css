@@ -991,7 +991,7 @@ h5 {
   margin: 2rem 0 0 0;
   padding-bottom: 10px;
 }
-.cbi-section,.cbi-section-node{
+.cbi-section{
 	  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
    transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
@@ -2624,12 +2624,6 @@ input[name="nslookup"] {
 }
 [data-page="admin-system-flash"] .cbi-section .cbi-section {
   margin-top: 0;
-}
-[data-page="admin-system-flash"] .cbi-map-tabbed {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-   transition: box-shadow .25s, -webkit-box-shadow .25s;
-    border-radius: 2px;
-	background:#fff;
 }
 [data-page="admin-system-flash"] legend {
   display: block !important;
