@@ -3244,4 +3244,7 @@ position: relative;
 .cbi-map fieldset.cbi-section:first-of-type p em{
 	display:block;
 }
+.cbi-section .cbi-section{
+box-shadow:none !important;	
+}
 /*# sourceMappingURL=./cascade.css.map */
