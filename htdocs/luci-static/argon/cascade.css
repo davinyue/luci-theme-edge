@@ -63,6 +63,38 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*::-webkit-scrollbar:hover {
+    background-color: rgba(100, 100, 100, .09);
+}
+
+*::-webkit-scrollbar-thumb:vertical {
+    background: rgba(100, 100, 100, .5);
+    -webkit-border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(100, 100, 100, .61);
+    -webkit-border-radius: 100px;
+}
+
+*::-webkit-scrollbar {
+    width: 0.5em !important;
+    overflow: visible;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    opacity: 0;
+    -webkit-transition: all .5s;
+}
+
+*::-webkit-scrollbar-thumb {
+    overflow: visible;
+    border-radius: 4px;
+    background: rgba(100, 100, 100, .2);
+}
+
 .icon-hello-world:before {
   content: "\e90e";
 }
