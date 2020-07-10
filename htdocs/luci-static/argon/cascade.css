@@ -1318,8 +1318,8 @@ td > table > tbody > tr > td,
 .cbi-button-neutral[value="Disable"] {
   font-weight: normal;
   color: #fff;
-  border: thin solid #eea236;
-  background-color: #f0ad4e;
+  border: none;
+  background-color:#fdb75a;
 }
 /* green */
 .cbi-button-success,
