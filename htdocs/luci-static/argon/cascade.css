@@ -2835,7 +2835,7 @@ input[type="checkbox"]:checked {
   .btn:not(button),
   .cbi-button {
     font-size: 0.8rem;
-    padding: 0.2rem 0.6rem;
+    padding: 0.2rem 1rem;
   }
   .label {
     padding: 0.2rem 0.6rem;
