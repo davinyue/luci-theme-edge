@@ -998,6 +998,7 @@ h5 {
 	  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
    transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
+	padding:0 1.2rem !important;
 }
 .cbi-section,
 .cbi-section-error,
@@ -3223,7 +3224,7 @@ webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12)
 .memory .cbi-progressbar > div{
 	background-color: #FDAC41 !important;
 }
-.cbi-map fieldset.cbi-section:first-of-type{
+.cbi-map style+fieldset.cbi-section:first-of-type{
 	box-shadow:none !important;
 	display: block;
     text-align: center;
@@ -3458,5 +3459,14 @@ box-shadow:none !important;
 [type="checkbox"].filled-in:disabled:checked + label:not(.lever):after {
   background-color: #949494;
   border-color: #949494;
+}
+.controls > *:nth-child(2), .controls > *:nth-child(3){
+position:relative;	
+}
+.controls>div .focus-input{
+    top: 1.53rem;	
+}
+#indicators{
+ cursor: pointer;
 }
 /*# sourceMappingURL=./cascade.css.map */
