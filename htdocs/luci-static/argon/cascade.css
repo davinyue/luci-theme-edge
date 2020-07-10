@@ -391,6 +391,7 @@ select {
   background-color: #fff;
   background-image: none;
 }
+
 .btn,
 button,
 select,
@@ -409,7 +410,10 @@ input,
   box-shadow: none;
   transition: box-shadow 0.15s ease;
 }
-
+btn,
+button,cbi-button{
+  height: 2.2rem;	
+}
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
     background-color: transparent;
     border: none;
@@ -443,7 +447,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     content: "";
     display: block;
     position: absolute;
-    top: 40px;
+    top: 2.5rem;
     left: 0;
     width: 0;
     height: 2px;
@@ -454,13 +458,16 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     background: #5A8DEE;
 }
 select+.focus-input::before {
-	top: 43px;
+	top: 2.7rem;
 }
 .node-main-login .focus-input::before {
-	top: 44px;
+	top: 2.73rem;
 }
 input:focus + .focus-input::before,select:focus + .focus-input::before {
     width: 100%;
+}
+input:focus,select:focus{
+	border:none !important;
 }
 select,
 .cbi-dropdown {
