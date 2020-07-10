@@ -1275,6 +1275,7 @@ td > table > tbody > tr > td,
 .cbi-button-neutral[onclick="handleConfig(event)"] {
   font-weight: normal;
   color: #fff;
+	border:none;
   background-color: #23bd70;
 }
 /* light blue */
@@ -1304,10 +1305,8 @@ td > table > tbody > tr > td,
 .cbi-button-neutral[value="Restart"] {
   font-weight: normal;
   color: #fff;
-  border: thin solid #f5365c;
-  border: thin solid var(--red);
-  background-color: #f5365c;
-  background-color: var(--red);
+  border: none;
+  background-color: #fdb75a;
 }
 /* yellow */
 .btn[value="Dismiss"],
