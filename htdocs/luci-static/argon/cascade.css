@@ -408,10 +408,6 @@ input,
   box-shadow: none;
   transition: box-shadow 0.15s ease;
 }
-btn,
-button,cbi-button{
-  height: 2.2rem;	
-}
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
     background-color: transparent;
     border: none;
@@ -478,7 +474,6 @@ input:not(.cbi-button):focus,
 }
 .cbi-dropdown,
 select[multiple="multiple"] {
-  height: auto;
 }
 pre {
   overflow: auto;
@@ -1663,7 +1658,6 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 }
 .cbi-dropdown[placeholder*="select"] {
   max-width: 25rem;
-  height: auto;
   margin-top: -3px;
 }
 .cbi-dropdown > ul {
@@ -1695,7 +1689,6 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 .cbi-dropdown > .more {
   font-size: 1rem;
   font-weight: 900;
-  line-height: 2;
   display: flex;
   flex-direction: column;
   flex-grow: 0;
@@ -1720,8 +1713,6 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   align-self: center;
   flex-grow: 1;
   flex-shrink: 1;
-  min-height: 20px;
-  padding: 0.25em;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -2645,7 +2636,6 @@ input[name="nslookup"] {
 [data-page="admin-system-opkg"] div.btn {
   line-height: 3;
   display: inline;
-  padding: 0.3rem 0.6rem;
 }
 [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear),
 [data-page="admin-system-opkg"] #maincontent > .container {
@@ -2881,11 +2871,7 @@ input[type="checkbox"]:checked {
   .main-right {
     width: calc(100% - 13rem);
   }
-  .btn:not(button),
-  .cbi-button {
-    font-size: 0.8rem;
-    padding: 0 0.5rem;
-  }
+
   .label {
     padding: 0.2rem 0.6rem;
   }
@@ -3560,7 +3546,22 @@ background-color:white !important;
 #cbi-openclash .cbi-map-descr{
 	color:#404040
 }
-input,button,select{
+input,select{
 height: 2.2rem;
 
+}
+input[type=button],input[type=submit],input[type=reset]{
+	height:auto !important;
+}
+  .btn,button,
+  .cbi-button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.5rem;
+  }
+  .waves-input-wrapper,.waves-effect {
+
+    overflow: hidden;
+}
+.controls > * > .btn{
+	flex-basis: auto !important;
 }
