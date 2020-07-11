@@ -1019,7 +1019,7 @@ h5 {
   line-height: normal;
   min-width: inherit;
   margin: 1.5rem 0;
-  padding: 0rem;
+  padding: 1rem 0rem;
   border: 0;
   background-color: #fff;
 }
@@ -1035,7 +1035,7 @@ h5 {
 .cbi-section-descr {
   font-size: small;
   line-height: 2rem;
-  padding: 0.5rem 0;
+  padding: 0 0 0.5rem;
 }
 .cbi-map-descr + fieldset {
   margin-top: 1rem;
