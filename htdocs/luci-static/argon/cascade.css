@@ -389,16 +389,16 @@ select {
   background-color: #fff;
   background-image: none;
 }
-
+div{
+	position:relative;
+}
 .btn,
 button,
 select,
 input,
 .cbi-button,
 .cbi-dropdown {
-  line-height: 1.5rem;
-  height: 2.5rem;
-  padding: 0.625rem 0.75rem;
+
   margin: 0.25rem 0.1rem 0;
   color: #8898aa;
       border: none;
@@ -445,7 +445,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     content: "";
     display: block;
     position: absolute;
-    top: 2.5rem;
+    top: 2.2rem;
     left: 0;
     width: 0;
     height: 2px;
@@ -456,7 +456,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     background: #5A8DEE;
 }
 select+.focus-input::before {
-	top: 2.7rem;
+	top: 2.35rem;
 }
 .node-main-login .focus-input::before {
 	top: 2.73rem;
@@ -465,7 +465,7 @@ input:focus + .focus-input::before,select:focus + .focus-input::before {
     width: 100%;
 }
 input:focus,select:focus{
-	border:none !important;
+	border-color:#fff !important;
 }
 select,
 .cbi-dropdown {
@@ -612,7 +612,7 @@ small {
 .main-right > #maincontent {
   position: relative;
   z-index: 50;
-  margin-top: -12rem;
+  margin-top: -13rem;
 }
 .pull-right {
   float: right;
@@ -629,7 +629,7 @@ small {
 header {
   color: #fff;
   color: var(--header-color);
-  padding: 0 0 12rem 0;
+  padding: 0 0 14rem 0;
 }
 header.bg-primary {
   background-color: #5A8DEE !important;
@@ -1000,9 +1000,7 @@ h5 {
     border-radius: 2px;
 
 }
-.cbi-section >*:not(.cbi-tabmenu){
-	padding:0 1.2rem;
-}
+
 .cbi-section,
 .cbi-section-error,
 #iptables,
@@ -1018,8 +1016,8 @@ h5 {
   font-style: normal;
   line-height: normal;
   min-width: inherit;
-  margin: 1.5rem 0;
-  padding: 1rem 0rem;
+  margin: 1rem 0;
+  padding: 0rem;
   border: 0;
   background-color: #fff;
 }
@@ -1036,6 +1034,11 @@ h5 {
   font-size: small;
   line-height: 2rem;
   padding: 0 0 0.5rem;
+  color:#fff;
+}
+.cbi-section-descr {
+
+  color:#404040;
 }
 .cbi-map-descr + fieldset {
   margin-top: 1rem;
@@ -1154,14 +1157,28 @@ tr > th,
 div > table > tbody > tr,
 div > .table > .tr {
   background-color: #e5effd;
+  transition: background-color .25s
+  
+}
+div > table > tbody > tr:hover,
+div > .table > .tr:hover {
+  background-color: #d9e9ff;
 }
 div > table > tbody > tr:nth-of-type(2n),
 div > .table > .tr:nth-of-type(2n) {
  background-color: #fff;
 }
+div > table > tbody > tr:nth-of-type(2n):hover,
+div > .table > .tr:nth-of-type(2n):hover {
+ 
+}
 div > table > tbody > tr:nth-of-type(3n),
 div > .table > .tr:nth-of-type(3n) {
   background-color: rgba(223, 56, 18, 0.05);
+}
+div > table > tbody > tr:nth-of-type(3n):hover,
+div > .table > .tr:nth-of-type(3n):hover {
+  background-color: rgba(223, 56, 18, 0.09);
 }
 /* fix multiple table */
 table table,
@@ -2287,15 +2304,23 @@ span[data-tooltip] .label {
 }
 .label,#indicators span {
   font-size: 0.8rem;
-  font-weight: bold;
   padding: 0.3rem 0.8rem;
   white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff !important;
   border-radius: 3px;
-  background-color: #bfbfbf;
   text-shadow: none;
+      margin: 0 0.5rem;
+	  color:#fff;
+	  background:#5A8DEE;
+}
+#indicators span[data-indicator="poll-status"]{
+	color: #39DA8A !important;
+    background-color: #D2FFE8;
+}
+#indicators span[data-indicator="uci-changes"]{
+	color: #FDAC41 !important;
+    background-color: #FFEED9;
 }
 label > input[type="checkbox"],
 label > input[type="radio"] {
@@ -3244,16 +3269,17 @@ webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12)
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 	background:none;
+	padding:0;
 }
-.cbi-map fieldset.cbi-section:first-of-type p font{
+.cbi-map style+fieldset.cbi-section:first-of-type p font{
 position: relative;
     display: inline-block;
     padding: 0 1rem;
 	color:#fff;
 }
-.cbi-map fieldset.cbi-section:first-of-type p font:before, .cbi-map fieldset.cbi-section:first-of-type p font:after {
+.cbi-map style+fieldset.cbi-section:first-of-type p font:before, .cbi-map style+fieldset.cbi-section:first-of-type p font:after {
     border-color: #FDAC41 !important;
 	content: "";
     position: absolute;
@@ -3261,13 +3287,13 @@ position: relative;
     width: 9999px;
     border-top: 2px solid #DFE3E7;
 }
-.cbi-map fieldset.cbi-section:first-of-type p font:before {
+.cbi-map style+fieldset.cbi-section:first-of-type p font:before {
     right: 100%;
 }
-.cbi-map fieldset.cbi-section:first-of-type p font:after {
+.cbi-map style+fieldset.cbi-section:first-of-type p font:after {
     left: 100%;
 }
-.cbi-map fieldset.cbi-section:first-of-type p em{
+.cbi-map style+fieldset.cbi-section:first-of-type p em{
 	display:block;
 }
 .cbi-section .cbi-section{
@@ -3482,4 +3508,62 @@ position:relative;
 }
 #indicators{
  cursor: pointer;
+}
+
+.cbi-section > h3:first-child, .panel-title{
+	font-size:1.1rem !important;
+}
+h2 {
+    font-size: 1.4rem !important;
+}
+.main .main-left .nav li.slide .menu{
+	font-size:0.9rem !important;
+	margin-top: 0.4rem !important;
+	margin-bottom: 0.4rem !important;
+	padding: 0.5rem 0 0.5rem 2.5rem !important;
+}
+.main .main-left .nav li.slide .slide-menu li{
+	padding: 0.4rem 0rem !important;
+}
+
+h3{
+	font-size:1.1rem !important;
+	padding: 1.5rem 1.5rem 1rem 1.5rem !important;
+}
+code,.cbi-progressbar::after{
+	font-size-adjust: none !important;
+	font-family: inherit !important;
+    font-size: 0.9em !important;
+}
+[data-page="admin-system-flash"] legend{
+	font-size: 1.1rem !important;
+     padding-bottom:0.6rem !important;
+}
+
+.main .main-left .nav li.slide .menu[data-title=Docker]:before {
+  content: "\e911";
+  color: #6699ff;
+}
+.main .main-left .nav li.slide .menu[data-title="Bandwidth Monitor"]:before {
+  content: "\e90d";
+  color: #01e501d4;
+}
+.main .main-left .nav li.slide .menu::before{
+	font-size:1.1rem !important;
+}
+.td.version{
+word-break: normal !important;	
+}
+.node-main-login .main .main-right .login-bg{
+background-color:white !important;	
+}
+.cbi-map >.cbi-section{
+	padding:1rem 1.2rem;
+}
+#cbi-openclash .cbi-map-descr{
+	color:#404040
+}
+input,button,select{
+height: 2.2rem;
+
 }
