@@ -1375,10 +1375,7 @@ td > table > tbody > tr > td,
   margin: 9px 0 4px 3px;
   padding: 1px 6px;
 }
-#cbi-passwall-global_other .cbi-value-field .cbi-button-add{
-	margin:0;
-	padding: 0.6rem 1.5rem;
-}
+
 .tabs {
   margin: 0 0rem;
   padding-left: 0.5rem;
@@ -2311,12 +2308,12 @@ span[data-tooltip] .label {
 	  background:#5A8DEE;
 }
 #indicators span[data-indicator="poll-status"]{
-	color: #39DA8A !important;
-    background-color: #D2FFE8;
+		color: #FDAC41 !important;
+    background-color: #FFEED9;
 }
 #indicators span[data-indicator="uci-changes"]{
-	color: #FDAC41 !important;
-    background-color: #FFEED9;
+	color: #39DA8A !important;
+    background-color: #D2FFE8;
 }
 label > input[type="checkbox"],
 label > input[type="radio"] {
@@ -3565,7 +3562,7 @@ input[type=button],input[type=submit],input[type=reset]{
     padding: 0.7rem 1.5rem;
   }
 i.waves-input-wrapper{
-	padding: 0;
+	padding: 0 !important;
 }
 
 .controls > * > .btn{
