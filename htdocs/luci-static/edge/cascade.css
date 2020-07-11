@@ -1370,7 +1370,15 @@ td > table > tbody > tr > td,
 .a-to-btn {
   text-decoration: none;
 }
-
+.cbi-value-field .cbi-button-add {
+  font-weight: bold;
+  margin: 9px 0 4px 3px;
+  padding: 1px 6px;
+}
+#cbi-passwall-global_other .cbi-value-field .cbi-button-add{
+	margin:0;
+	padding: 0.6rem 1.5rem;
+}
 .tabs {
   margin: 0 0rem;
   padding-left: 0.5rem;
