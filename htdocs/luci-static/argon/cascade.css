@@ -1,18 +1,18 @@
 /**
- *  Argon is a clean HTML5 theme for LuCI. It is based on luci-theme-material and Argon Template
+ *  edge is a clean HTML5 theme for LuCI. It is based on luci-theme-material and edge Template
  *
- *  luci-theme-argon
+ *  luci-theme-edge
  *      Copyright 2019 Jerrykuku <jerrykuku@qq.com>
  *
  *  Have a bug? Please create an issue here on GitHub!
- *      https://github.com/jerrykuku/luci-theme-argon/issues
+ *      https://github.com/jerrykuku/luci-theme-edge/issues
  *
  *  luci-theme-material: 
  *      Copyright 2015 Lutty Yang <lutty@wcan.in>
  *		https://github.com/LuttyYang/luci-theme-material/
  *
  *  Agron Theme
- *	    https://demos.creative-tim.com/argon-dashboard/index.html
+ *	    https://demos.creative-tim.com/edge-dashboard/index.html
  *
  *  Login background
  *      https://unsplash.com/
@@ -37,9 +37,9 @@
 
 
 @font-face {
-  font-family: 'argon';
-  src: url('fonts/argon.eot?vncylf');
-  src: url('fonts/argon.eot?vncylf#iefix') format('embedded-opentype'), url('fonts/argon.ttf?vncylf') format('truetype'), url('fonts/argon.woff?vncylf') format('woff'), url('fonts/argon.svg?vncylf#argon') format('svg');
+  font-family: 'edge';
+  src: url('fonts/edge.eot?vncylf');
+  src: url('fonts/edge.eot?vncylf#iefix') format('embedded-opentype'), url('fonts/edge.ttf?vncylf') format('truetype'), url('fonts/edge.woff?vncylf') format('woff'), url('fonts/edge.svg?vncylf#edge') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -53,7 +53,7 @@
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'argon' !important;
+  font-family: 'edge' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -389,16 +389,16 @@ select {
   background-color: #fff;
   background-image: none;
 }
-div{
-	position:relative;
-}
+
 .btn,
 button,
 select,
 input,
 .cbi-button,
 .cbi-dropdown {
-
+  line-height: 1.5rem;
+  height: 2.5rem;
+  padding: 0.625rem 0.75rem;
   margin: 0.25rem 0.1rem 0;
   color: #8898aa;
       border: none;
@@ -407,6 +407,10 @@ input,
   background-image: none;
   box-shadow: none;
   transition: box-shadow 0.15s ease;
+}
+btn,
+button,cbi-button{
+  height: 2.2rem;	
 }
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
     background-color: transparent;
@@ -441,7 +445,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     content: "";
     display: block;
     position: absolute;
-    top: 2.2rem;
+    top: 2.5rem;
     left: 0;
     width: 0;
     height: 2px;
@@ -452,7 +456,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     background: #5A8DEE;
 }
 select+.focus-input::before {
-	top: 2.35rem;
+	top: 2.7rem;
 }
 .node-main-login .focus-input::before {
 	top: 2.73rem;
@@ -461,7 +465,7 @@ input:focus + .focus-input::before,select:focus + .focus-input::before {
     width: 100%;
 }
 input:focus,select:focus{
-	border-color:#fff !important;
+	border:none !important;
 }
 select,
 .cbi-dropdown {
@@ -474,6 +478,7 @@ input:not(.cbi-button):focus,
 }
 .cbi-dropdown,
 select[multiple="multiple"] {
+  height: auto;
 }
 pre {
   overflow: auto;
@@ -607,7 +612,7 @@ small {
 .main-right > #maincontent {
   position: relative;
   z-index: 50;
-  margin-top: -13rem;
+  margin-top: -12rem;
 }
 .pull-right {
   float: right;
@@ -624,7 +629,7 @@ small {
 header {
   color: #fff;
   color: var(--header-color);
-  padding: 0 0 14rem 0;
+  padding: 0 0 12rem 0;
 }
 header.bg-primary {
   background-color: #5A8DEE !important;
@@ -794,7 +799,7 @@ div > .table > .tr:nth-of-type(3n) {
   color: #fff !important;
 }
 .main .main-left .nav li.slide .menu::before {
-  font-family: 'argon' !important;
+  font-family: 'edge' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -812,7 +817,7 @@ div > .table > .tr:nth-of-type(3n) {
   position: absolute;
   right: 0.5rem;
   top: 0.8rem;
-  font-family: 'argon' !important;
+  font-family: 'edge' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -929,7 +934,7 @@ div > .table > .tr:nth-of-type(3n) {
   position: relative;
 }
 .logout:before {
-  font-family: 'argon' !important;
+  font-family: 'edge' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -995,7 +1000,9 @@ h5 {
     border-radius: 2px;
 
 }
-
+.cbi-section >*:not(.cbi-tabmenu){
+	padding:0 1.2rem;
+}
 .cbi-section,
 .cbi-section-error,
 #iptables,
@@ -1011,7 +1018,7 @@ h5 {
   font-style: normal;
   line-height: normal;
   min-width: inherit;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 0rem;
   border: 0;
   background-color: #fff;
@@ -1028,12 +1035,7 @@ h5 {
 .cbi-section-descr {
   font-size: small;
   line-height: 2rem;
-  padding: 0 0 0.5rem;
-  color:#fff;
-}
-.cbi-section-descr {
-
-  color:#404040;
+  padding: 0.5rem 0;
 }
 .cbi-map-descr + fieldset {
   margin-top: 1rem;
@@ -1152,28 +1154,14 @@ tr > th,
 div > table > tbody > tr,
 div > .table > .tr {
   background-color: #e5effd;
-  transition: background-color .25s
-  
-}
-div > table > tbody > tr:hover,
-div > .table > .tr:hover {
-  background-color: #d9e9ff;
 }
 div > table > tbody > tr:nth-of-type(2n),
 div > .table > .tr:nth-of-type(2n) {
  background-color: #fff;
 }
-div > table > tbody > tr:nth-of-type(2n):hover,
-div > .table > .tr:nth-of-type(2n):hover {
- 
-}
 div > table > tbody > tr:nth-of-type(3n),
 div > .table > .tr:nth-of-type(3n) {
   background-color: rgba(223, 56, 18, 0.05);
-}
-div > table > tbody > tr:nth-of-type(3n):hover,
-div > .table > .tr:nth-of-type(3n):hover {
-  background-color: rgba(223, 56, 18, 0.09);
 }
 /* fix multiple table */
 table table,
@@ -1658,6 +1646,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 }
 .cbi-dropdown[placeholder*="select"] {
   max-width: 25rem;
+  height: auto;
   margin-top: -3px;
 }
 .cbi-dropdown > ul {
@@ -1689,6 +1678,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 .cbi-dropdown > .more {
   font-size: 1rem;
   font-weight: 900;
+  line-height: 2;
   display: flex;
   flex-direction: column;
   flex-grow: 0;
@@ -1713,6 +1703,8 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   align-self: center;
   flex-grow: 1;
   flex-shrink: 1;
+  min-height: 20px;
+  padding: 0.25em;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -2295,23 +2287,15 @@ span[data-tooltip] .label {
 }
 .label,#indicators span {
   font-size: 0.8rem;
+  font-weight: bold;
   padding: 0.3rem 0.8rem;
   white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
+  color: #fff !important;
   border-radius: 3px;
+  background-color: #bfbfbf;
   text-shadow: none;
-      margin: 0 0.5rem;
-	  color:#fff;
-	  background:#5A8DEE;
-}
-#indicators span[data-indicator="poll-status"]{
-	color: #39DA8A !important;
-    background-color: #D2FFE8;
-}
-#indicators span[data-indicator="uci-changes"]{
-	color: #FDAC41 !important;
-    background-color: #FFEED9;
 }
 label > input[type="checkbox"],
 label > input[type="radio"] {
@@ -2528,7 +2512,7 @@ input[name="nslookup"] {
   outline: 0;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value .cbi-value-field:before {
-  font-family: 'argon' !important;
+  font-family: 'edge' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -2636,6 +2620,7 @@ input[name="nslookup"] {
 [data-page="admin-system-opkg"] div.btn {
   line-height: 3;
   display: inline;
+  padding: 0.3rem 0.6rem;
 }
 [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear),
 [data-page="admin-system-opkg"] #maincontent > .container {
@@ -2871,7 +2856,11 @@ input[type="checkbox"]:checked {
   .main-right {
     width: calc(100% - 13rem);
   }
-
+  .btn:not(button),
+  .cbi-button {
+    font-size: 0.8rem;
+    padding: 0.2rem 1rem;
+  }
   .label {
     padding: 0.2rem 0.6rem;
   }
@@ -3155,7 +3144,7 @@ input[type="checkbox"]:checked {
     display: inline-block !important;
   }
   .showSide::before {
-    font-family: 'argon' !important;
+    font-family: 'edge' !important;
     font-style: normal !important;
     font-weight: normal !important;
     font-variant: normal !important;
@@ -3239,7 +3228,10 @@ webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12)
 	top:0;
 	transition:all .20s linear;
 }
-
+.cbi-button.waves-input-wrapper{
+	    padding: 0;
+		
+}
 .cpu .cbi-progressbar > div{
 	background-color: #5A8DEE !important;
 }
@@ -3252,17 +3244,16 @@ webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12)
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 	background:none;
-	padding:0;
 }
-.cbi-map style+fieldset.cbi-section:first-of-type p font{
+.cbi-map fieldset.cbi-section:first-of-type p font{
 position: relative;
     display: inline-block;
     padding: 0 1rem;
 	color:#fff;
 }
-.cbi-map style+fieldset.cbi-section:first-of-type p font:before, .cbi-map style+fieldset.cbi-section:first-of-type p font:after {
+.cbi-map fieldset.cbi-section:first-of-type p font:before, .cbi-map fieldset.cbi-section:first-of-type p font:after {
     border-color: #FDAC41 !important;
 	content: "";
     position: absolute;
@@ -3270,13 +3261,13 @@ position: relative;
     width: 9999px;
     border-top: 2px solid #DFE3E7;
 }
-.cbi-map style+fieldset.cbi-section:first-of-type p font:before {
+.cbi-map fieldset.cbi-section:first-of-type p font:before {
     right: 100%;
 }
-.cbi-map style+fieldset.cbi-section:first-of-type p font:after {
+.cbi-map fieldset.cbi-section:first-of-type p font:after {
     left: 100%;
 }
-.cbi-map style+fieldset.cbi-section:first-of-type p em{
+.cbi-map fieldset.cbi-section:first-of-type p em{
 	display:block;
 }
 .cbi-section .cbi-section{
@@ -3508,7 +3499,9 @@ h2 {
 .main .main-left .nav li.slide .slide-menu li{
 	padding: 0.4rem 0rem !important;
 }
-
+.cbi-section, .cbi-section-error, #iptables, .Firewall form, #cbi-network > .cbi-section-node, #cbi-wireless > .cbi-section-node, #cbi-wireless > #wifi_assoclist_table, [data-tab-title], [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear), [data-page="admin-system-opkg"] #maincontent > .container{
+	    margin: 1rem 0 !important;
+}
 h3{
 	font-size:1.1rem !important;
 	padding: 1.5rem 1.5rem 1rem 1.5rem !important;
@@ -3522,7 +3515,9 @@ code,.cbi-progressbar::after{
 	font-size: 1.1rem !important;
      padding-bottom:0.6rem !important;
 }
-
+.node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value .cbi-value-field input{
+height:auto !important;	
+}
 .main .main-left .nav li.slide .menu[data-title=Docker]:before {
   content: "\e911";
   color: #6699ff;
@@ -3539,29 +3534,4 @@ word-break: normal !important;
 }
 .node-main-login .main .main-right .login-bg{
 background-color:white !important;	
-}
-.cbi-map >.cbi-section{
-	padding:1rem 1.2rem;
-}
-#cbi-openclash .cbi-map-descr{
-	color:#404040
-}
-input,select{
-height: 2.2rem;
-
-}
-input[type=button],input[type=submit],input[type=reset]{
-	height:auto !important;
-}
-  .btn,button,
-  .cbi-button {
-    font-size: 0.8rem;
-    padding: 0.6rem 1.5rem;
-  }
-  .waves-input-wrapper,.waves-effect {
-
-    overflow: hidden;
-}
-.controls > * > .btn{
-	flex-basis: auto !important;
 }
