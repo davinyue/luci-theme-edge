@@ -3482,18 +3482,14 @@ position:relative;
 #indicators{
  cursor: pointer;
 }
-canvas {
+body >canvas {
   position: absolute;
-width: 100%;
-  height: 100%;
   top:0;
-  right:0;
 }
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-	right:0;
   position: absolute;
   width: 100%;
   height: 100%;
