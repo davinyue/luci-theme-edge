@@ -998,9 +998,10 @@ h5 {
 	  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
    transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
+
 }
 .cbi-section >*:not(.cbi-tabmenu){
-	padding:0 1.2rem !important;
+	padding:0 1.2rem;
 }
 .cbi-section,
 .cbi-section-error,
@@ -1034,7 +1035,7 @@ h5 {
 .cbi-section-descr {
   font-size: small;
   line-height: 2rem;
-  padding: 0 0 0.5rem
+  padding: 0.5rem 0;
 }
 .cbi-map-descr + fieldset {
   margin-top: 1rem;
@@ -1401,7 +1402,7 @@ td > table > tbody > tr > td,
   color: #5A8DEE;
 }
 .cbi-tabmenu {
-  border: 0 solid #d4d4d4;
+
   border-bottom: 0;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
    transition: box-shadow .25s, -webkit-box-shadow .25s;
@@ -3481,20 +3482,4 @@ position:relative;
 }
 #indicators{
  cursor: pointer;
-}
-body >canvas {
-  position: absolute;
-  top:0;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: 99;
 }
