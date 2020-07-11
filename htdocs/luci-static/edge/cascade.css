@@ -3562,7 +3562,7 @@ input[type=button],input[type=submit],input[type=reset]{
   .btn,button,
   .cbi-button,input[type=button],input[type=submit],input[type=reset] {
     font-size: 0.8rem;
-    padding: 0.65rem 1.5rem;
+    padding: 0.7rem 1.5rem;
   }
 i.waves-input-wrapper{
 	padding: 0;
