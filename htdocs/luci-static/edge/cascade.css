@@ -2558,9 +2558,9 @@ input[name="nslookup"] {
   padding-top: 0;
   margin-bottom:20px;
 }
-.node-main-login .main .main-right #maincontent .container .cbi-page-actions .cbi-button {
+.node-main-login .main .main-right #maincontent .container .cbi-page-actions input {
 
-  padding: 0.5rem 5.5rem
+  padding: 0.7rem 5.5rem
 
 }
 .node-main-login .main .main-right #maincontent .container .cbi-page-actions .cbi-button.cbi-button-reset {
@@ -3561,9 +3561,9 @@ input[type=button],input[type=submit],input[type=reset]{
   .btn,button,
   .cbi-button,input[type=button],input[type=submit],input[type=reset] {
     font-size: 0.8rem;
-    padding: 0.6rem 1.5rem;
+    padding: 0.65rem 1.5rem;
   }
-.waves-input-wrapper input{
+i.waves-input-wrapper{
 	padding: 0;
 }
 
