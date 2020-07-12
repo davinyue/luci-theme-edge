@@ -12,8 +12,6 @@
 [![license][1]][2]
 [![PRs Welcome][3]][4]
 [![Issue Welcome][5]][6]
-[![Release Version][7]][8]
-[![Release Count][9]][8]
 [![Contact Me][10]][11]
 
 
