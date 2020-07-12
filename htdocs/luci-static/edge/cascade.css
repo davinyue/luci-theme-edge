@@ -1495,12 +1495,15 @@ td > table > tbody > tr > td,
   font-size: small;
   padding: 0.4rem 0;
   opacity: 0.6;
+  line-height: inherit !important;
+}
+.cbi-value-field br{
+	display:none;
 }
 .cbi-value-title {
   display: table-cell;
   float: left;
   width: 23rem;
-  padding-top: 0.25rem;
   padding-right: 2rem;
   text-align: right;
   word-wrap: break-word;
@@ -1510,6 +1513,9 @@ td > table > tbody > tr > td,
   width: 100%;
   padding: 0.35rem 1rem 0.2rem 1rem;
   line-height: 2.4rem;
+}
+.cbi-value-field >*{
+	line-height: 2.4rem;
 }
 .cbi-value ul {
   line-height: 1.25;
@@ -2065,12 +2071,13 @@ td > .ifacebadge,
   background-color: #fff;
 }
 /* textarea */
-.cbi-input-textarea {
+textarea {
   font-family: monospace;
   width: 100%;
-  min-height: 14rem;
+  max-height: 18rem;
+  min-width:25rem;
   padding: 0.8rem;
-  color: #000;
+  line-height:1.6rem !important;
 }
 #syslog {
   font-size: small;
