@@ -63,6 +63,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+a {
+    color: #5A8DEE;
+    text-decoration: none;
+    background-color: transparent;
+}
 *::-webkit-scrollbar:hover {
     background-color: rgba(100, 100, 100, .09);
 }
@@ -371,16 +376,18 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-
+body {
+font-family: "Google Sans", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif", "Helvetica Neue", "Helvetica", "Hiragino Sans GB";
+font-size: 0.82rem;
+  
+  color:#4d5156
+}
 html,
 body {
-  font-family: "Google Sans", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif", "Helvetica Neue", "Helvetica", "Hiragino Sans GB";
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 0.82rem;
-  background-color: #f8f9fe;
-  color:#4d5156
+background-color: #fff;
 }
 select {
   padding: 0.36rem 0.8rem;
@@ -1387,7 +1394,7 @@ td > table > tbody > tr > td,
 .tabs > li,
 .cbi-tabmenu > li {
   display: inline-block;
-      padding: 0.75rem 1rem;
+      padding: 0;
     margin: 0;
 
   cursor: pointer;
@@ -1407,9 +1414,10 @@ td > table > tbody > tr > td,
 }
 .tabs > li > a,
 .cbi-tabmenu > li > a {
-  padding: 0.6rem 0.9rem;
+  padding: 0.8rem 1.9rem;
   text-decoration: none;
   color: #404040;
+  display:inline-block;
 }
 .tabs > li[class~="active"] > a {
   color: #5A8DEE;
@@ -1485,8 +1493,8 @@ td > table > tbody > tr > td,
 }
 .cbi-value-description {
   font-size: small;
-  padding-top: 0.4rem 0;
-  opacity: 0.5;
+  padding: 0.4rem 0;
+  opacity: 0.6;
 }
 .cbi-value-title {
   display: table-cell;
