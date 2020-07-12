@@ -1,4 +1,4 @@
-# luci-theme-argon ([Eng](/README.md))
+# luci-theme-edge ([Eng](/README.md))
 [1]: https://img.shields.io/badge/license-MIT-brightgreen.svg
 [2]: /LICENSE
 [3]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
@@ -11,8 +11,6 @@
 [![license][1]][2]
 [![PRs Welcome][3]][4]
 [![Issue Welcome][5]][6]
-[![Release Version][7]][8]
-[![Release Count][9]][8]
 [![Contact Me][10]][11]
 
 
