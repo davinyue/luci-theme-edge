@@ -1,5 +1,4 @@
-# luci-theme-edge ([中文](/README_ZH.md))
-
+# luci-theme-argon ([Eng](/README.md))
 [1]: https://img.shields.io/badge/license-MIT-brightgreen.svg
 [2]: /LICENSE
 [3]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
@@ -17,12 +16,10 @@
 [![Contact Me][10]][11]
 
 
+全新的 Openwrt 主题，基于luci-theme-argon 主题进行修改。 
 
-A new Luci theme for LEDE/OpenWRT  
-Edge is a clean HTML5 theme for LuCI. It is based on luci-theme-argon Template  
+## 注意
+仅适用于 luci 19.07
 
-## Notice
-Cant't adapt to luci 18.06.  
-
-## Thanks to 
+## 感谢
 luci-theme-argon: https://github.com/jerrykuku/luci-theme-argon
