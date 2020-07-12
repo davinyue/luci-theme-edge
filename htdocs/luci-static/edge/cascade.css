@@ -592,6 +592,7 @@ small {
 .main-left .sidenav-header {
   padding: 1.5rem 0 0.6rem;
   text-align: center;
+	width: calc(0% + 13rem);
 }
 .main-left .sidenav-header .brand {
   font-size: 1.8rem;
