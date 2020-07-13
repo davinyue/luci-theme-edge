@@ -2440,39 +2440,44 @@ input[name="nslookup"] {
   background:#faf5f3c2;
   margin:0;
 }
-.node-main-login .main .main-right #maincontent .container .alert-message.warning {
+.node-main-login .main .main-right #maincontent .alert-message.warning {
   position: absolute;
   color: #fff;
-  width: calc(100% - 2rem);
+  width: calc(100%);
   box-sizing: border-box;
-  margin-top: 8rem;
+  margin-top: -1.5rem;
   border-radius: 5px !important;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   text-align: center;
-  background-color: var(--purple) !important;
+  background-color:#eea236  !important;
 }
-.node-main-login .main .main-right #maincontent .container .alert-message.warning p {
+.node-main-login .main .main-right #maincontent .alert-message.warning p {
   color: #fff;
 }
-.node-main-login .main .main-right #maincontent .container .alert-message.error {
+.node-main-login .main .main-right #maincontent .alert-message.error {
   position: absolute;
   color: #fff;
-  width: calc(100% - 2rem);
+  width: calc(100%);
   background-color: #f0ad4e;
   border-color: #eea236;
   box-sizing: border-box;
-  margin-top: -7rem;
+  margin-top: -5.5rem;
   border-radius: 5px !important;
-  padding: 1rem 2rem 0.5rem 2rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   text-align: center;
 }
-.node-main-login .main .main-right #maincontent .container .alert-message.error p {
+.node-main-login .main .main-right #maincontent .alert-message.error p {
   color: #fff;
+
 }
-.node-main-login .main .main-right #maincontent .container .alert-message.error h4 {
+.alert-message p {
+  font-weight:normal;
+
+}
+.node-main-login .main .main-right #maincontent .alert-message.error h4 {
   font-size: 1rem;
 }
-.node-main-login .main .main-right #maincontent .container .alert-message.error .btn {
+.node-main-login .main .main-right #maincontent .alert-message.error .btn {
   height: auto;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map h2 {
