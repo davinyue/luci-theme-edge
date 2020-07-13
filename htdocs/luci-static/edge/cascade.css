@@ -2912,9 +2912,7 @@ input[type="checkbox"]:checked {
   header > .fill > .container {
     cursor: default;
   }
-  header{
-	  display:block;
-  }
+ 
   .main-left {
     width: calc(0% + 13rem);
   }
@@ -3146,6 +3144,9 @@ input[type="checkbox"]:checked {
   }
 }
 @media screen and (max-width: 768px) {
+	 header{
+	  display:block;
+  }
   body {
     font-size: 0.8rem;
   }
