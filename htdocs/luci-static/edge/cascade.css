@@ -604,7 +604,7 @@ small {
   vertical-align: text-bottom;
   white-space: nowrap;
 }
-.main-left .brand img{
+.brand img{
 	width:180px;
 }
 .main-right {
@@ -2921,10 +2921,7 @@ input[type="checkbox"]:checked {
   .main-right {
     width: calc(100% - 13rem);
   }
-  .tabs > li > a,
-  .cbi-tabmenu > li > a {
-    padding: 0.2rem 0.5rem;
-  }
+
   .panel-title {
     font-size: 1.1rem;
     padding-bottom: 1rem;
