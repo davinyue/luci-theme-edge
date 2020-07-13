@@ -635,7 +635,6 @@ small {
 header {
   color: #fff;
   color: var(--header-color);
-  background:#5A8DEE;
   display:none;
 
 }
@@ -648,7 +647,6 @@ header .container {
 }
 header .container .showSide {
   display: none;
-  color: #fff;
   font-size: 1.4rem;
 }
 header .container .brand {
@@ -3162,10 +3160,14 @@ input[type="checkbox"]:checked {
   .main-right {
     width: 100%;
   }
+  .main-right > #maincontent{
+	  margin-top:0.5rem;
+  }
   .showSide {
     padding: 0.1rem;
     position: relative;
     z-index: 99;
+	top:-0.7rem;
     display: inline-block !important;
   }
   .showSide::before {
