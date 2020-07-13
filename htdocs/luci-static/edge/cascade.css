@@ -3330,7 +3330,7 @@ box-shadow:none !important;
 [type="checkbox"]:not(.filled-in) + label:not(.lever):after {
   content: '';
   position: absolute;
-  top: 0;
+  top: 0.4rem;
   left: 0;
   width: 15px;
   height: 15px;
@@ -3364,7 +3364,7 @@ box-shadow:none !important;
 }
 
 [type="checkbox"]:checked + label:not(.lever):before {
-  top: 0;
+  top: 0.1rem;
   left: -5px;
   width: 9px;
   height: 18px;
