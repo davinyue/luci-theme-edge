@@ -2635,7 +2635,7 @@ text-align:center;
   color: var(--gray-dark);
 }
 .controls {
-  margin: 0.5em 1rem 1em 1rem !important;
+  margin: 0.5em 2rem 1em 2rem !important;
 }
 .controls > * > .btn:not([aria-label$="page"]) {
   flex-grow: initial !important;
