@@ -3324,7 +3324,6 @@ box-shadow:none !important;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-		  top:9px;
 }
 
 [type="checkbox"] + label:not(.lever):before,
@@ -3365,7 +3364,7 @@ box-shadow:none !important;
 }
 
 [type="checkbox"]:checked + label:not(.lever):before {
-  top: -4px;
+  top: 0;
   left: -5px;
   width: 9px;
   height: 18px;
