@@ -1,11 +1,10 @@
 
 /* Global Styles
   ---------------------------------------------- */
-  html {font-family: 'Open Sans', sans-serif; background: #0D133A; height:100%; font-size: 100%; text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-smoothing: antialiased;overflow: hidden;position: relative;}
-  body {height:100%;overflow: hidden; margin: 0; font-size: 1em; line-height: 1.4; position: relative;}
+ 
   img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
   svg:not(:root) { overflow: hidden; }
-  a{color: white;text-decoration: none;}
+
 
 /* Animation globals
   ---------------------------------------------- */
