@@ -2479,18 +2479,10 @@ input[name="nslookup"] {
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map h2 {
 	
-  width: 200px;
-height:57px;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 4px;
   display: block;
   margin: 10px auto 10px auto;
   padding: 0;
-  text-indent: -500px;
-  overflow: hidden;
-  background-image: url(logo.png);
-  background-size: cover;
+text-align:center;
 
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-map-descr {
