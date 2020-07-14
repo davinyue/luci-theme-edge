@@ -684,6 +684,11 @@ header .fill .status * {
 #xhr_poll_status * {
   color: #fff;
 }
+.modal.alert-message p{
+	font-weight:bold;
+	color:#fff;
+	font-size:0.9rem;
+}
 .danger {
   background-color: #ff7d60 !important;
 }
@@ -695,10 +700,7 @@ header .fill .status * {
 }
 .notice {
   background-color: #11cdef !important;
-  div > table > tbody > tr:nth-of-type(3n),
-div > .table > .tr:nth-of-type(3n) {
-  background-color: #e5effd;
-}
+
 }
 .error {
   color: #f00;
@@ -1895,7 +1897,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   min-width: 270px;
   max-width: 600px;
   min-height: 32px;
-  margin: 5em auto;
+  margin: 25vh auto;
   padding: 1em;
   border-radius: 3px !important;
   background: #fff;
@@ -1932,8 +1934,8 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   color: #808080;
 }
 .modal p {
-  padding-left: 0.25rem;
   word-break: break-word;
+  text-align:center;
 }
 .modal .label {
   font-size: 0.6rem;
