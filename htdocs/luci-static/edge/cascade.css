@@ -1949,9 +1949,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 .modal .label.warning {
   background-color: #f0ad4e !important;
 }
-.modal .btn {
-  padding: 0.3rem 0.6rem;
-}
+
 .modal.cbi-modal {
   max-width: 90%;
   max-height: none;
