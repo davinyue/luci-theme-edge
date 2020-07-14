@@ -30,4 +30,5 @@ luci-theme-argon: https://github.com/jerrykuku/luci-theme-argon
 ![](/Screenshots/3.png)
 ![](/Screenshots/4.png)
 ![](/Screenshots/5.png)
-![](/Screenshots/6.png)
+<br/>
+<img src="/Screenshots/6.png" width="550" />
