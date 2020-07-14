@@ -22,7 +22,6 @@
  */
 
 document.addEventListener('luci-loaded', function(ev) {
-	setTimeout(function(){
 (function ($) {
 	$(".main > .loading").fadeOut();
 
@@ -219,6 +218,7 @@ document.addEventListener('luci-loaded', function(ev) {
 				break;
 		}
 	}
+	setTimeout(function(){
 var config = {
     // How long Waves effect duration 
     // when it's clicked (in milliseconds)
@@ -237,5 +237,5 @@ $(".waves-input-wrapper").filter(function () {
 }).hide();
 	$("select,input[type='text'],input[type='email'],input[type='password'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").after("<span class='focus-input'></span>");
 })(jQuery);
-}, 0);
+}, 100);
 });
