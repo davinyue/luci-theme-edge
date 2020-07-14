@@ -688,6 +688,7 @@ header .fill .status * {
 	font-weight:bold;
 	color:#fff;
 	font-size:0.9rem;
+	text-align:center;
 }
 .danger {
   background-color: #ff7d60 !important;
@@ -1935,7 +1936,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 }
 .modal p {
   word-break: break-word;
-  text-align:center;
+  
 }
 .modal .label {
   font-size: 0.6rem;
