@@ -1270,7 +1270,6 @@ td > table > tbody > tr > td,
 .item:hover::after,
 .item:focus::after {
       opacity: 0.7;
-	  top:0.1rem;
 }
 .btn:active,
 .cbi-button:active,
