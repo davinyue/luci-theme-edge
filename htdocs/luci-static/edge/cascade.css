@@ -1714,6 +1714,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   cursor: default;
   text-align: center;
   outline: 0;
+  line-height:1rem;
 }
 .cbi-dropdown > .more,
 .cbi-dropdown > ul > li[placeholder] {
@@ -2950,7 +2951,7 @@ input[type="checkbox"]:checked {
     font-size: 0.9rem;
   }
   .main > .main-left > .nav > .slide > .slide-menu > li > a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   #modal_overlay {
     top: 0rem;
@@ -2966,11 +2967,6 @@ input[type="checkbox"]:checked {
   }
   .commandbox {
     width: 32% !important;
-  }
-  .btn:not(button),
-  .cbi-button {
-    font-size: 0.8rem;
-    padding: 0.2rem 0.6rem;
   }
 }
 @media screen and (max-width: 1152px) {
@@ -3140,11 +3136,6 @@ input[type="checkbox"]:checked {
     width: 100% !important;
     margin-left: 0 !important;
   }
-  .btn:not(button),
-  .cbi-button {
-    font-size: 0.8rem;
-    padding: 0.2rem 0.6rem;
-  }
 }
 @media screen and (max-width: 768px) {
 	 header{
@@ -3153,6 +3144,12 @@ input[type="checkbox"]:checked {
   body {
     font-size: 0.8rem;
   }
+ .tabs > li > a, .cbi-tabmenu > li > a{
+	 padding: 0.7rem 1.2rem;
+ }
+ .btn, button, .cbi-button, input[type=button], input[type=submit], input[type=reset]{
+	 padding: 0.5rem 1.2rem !important;
+ }
   .cbi-progressbar::after {
     font-size: 0.95em;
     line-height: 1.5;
@@ -3566,6 +3563,10 @@ background-color:white !important;
 }
 .cbi-map >.cbi-section{
 	padding:0 2rem;
+}
+.cbi-map >.cbi-section .cbi-value{
+	padding-left:0;
+	padding-right:0;
 }
 .cbi-section ~ .cbi-section> .panel-title{
 	padding-top:0;
