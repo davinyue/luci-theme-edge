@@ -1497,9 +1497,7 @@ ul.tabs,.tabmenu .tabs,#tabmenu .tabs,ul.cbi-tabmenu{
   opacity: 0.6;
   line-height: inherit !important;
 }
-.cbi-value-field br{
-	display:none;
-}
+
 .cbi-value-title {
   display: table-cell;
   float: left;
