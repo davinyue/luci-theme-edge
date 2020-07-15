@@ -236,6 +236,6 @@ $(".waves-input-wrapper").filter(function () {
   return ($(this).children().is(":hidden"))
 }).hide();
 	$("select,input[type='text'],input[type='email'],input[type='password'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").after("<span class='focus-input'></span>");
-})(jQuery);
 }, 100);
+})(jQuery);
 });
