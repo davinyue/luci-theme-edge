@@ -2337,7 +2337,6 @@ span[data-tooltip] .label {
 label > input[type="checkbox"],
 label > input[type="radio"] {
   position: relative;
-  top: 0.4rem;
   right: 0.2rem;
   margin: 0;
   vertical-align: bottom;
@@ -3301,12 +3300,6 @@ box-shadow:none !important;
 /* Checkboxes
    ========================================================================== */
 /* Remove default checkbox */
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
 
 [type="checkbox"] {
   /* checkbox aspect */
