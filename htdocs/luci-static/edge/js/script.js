@@ -244,7 +244,7 @@ $("input[type='checkbox']").filter(function () {
 $("select,input").filter(function () {
   return ($(this).next(".focus-input").length)
 }).focus(function(){
-  $(this).css("border","#fff");
+  $(this).css("border-bottom","1px solid #fff");
 }).blur(function(){
   $(this).css("border-bottom","1px solid #9e9e9e");
 });
