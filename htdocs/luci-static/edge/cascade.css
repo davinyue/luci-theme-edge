@@ -715,7 +715,7 @@ header .fill .status * {
   font-weight: bold;
   margin-bottom: 1em;
   padding:0.7rem 1rem;
-  rgba(90, 141, 238, 0.2);
+  background:rgba(90, 141, 238, 0.2);
       color: #5A8DEE;
   border: 0;
 
@@ -2472,11 +2472,9 @@ input[name="nslookup"] {
 }
 .node-main-login .main .main-right #maincontent .alert-message.error p {
   color: #fff;
-
 }
 .alert-message p {
-  
-
+    text-align: center;
 }
 .node-main-login .main .main-right #maincontent .alert-message.error h4 {
   font-size: 1rem;
