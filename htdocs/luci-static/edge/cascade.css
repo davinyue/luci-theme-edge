@@ -694,13 +694,16 @@ header .fill .status * {
 	text-align:center;
 }
 .danger {
-  background-color: #ff7d60 !important;
+  background-color: rgba(255, 91, 92, 0.2) !important;
+	color:#FF5B5C !important;
 }
 .warning {
-  background-color: #f0e68c !important;
+  background-color: rgba(253, 172, 65, 0.2) !important;
+	color:#FDAC41 !important;
 }
 .success {
-  background-color: #5cb85c !important;
+  background-color: rgba(57, 218, 138, 0.2) !important;
+	color:#39DA8A !important;
 }
 .notice {
   background-color: #5A8DEE !important;
@@ -714,8 +717,8 @@ header .fill .status * {
   font-weight: bold;
   margin-bottom: 1em;
   padding:0.7rem 1rem;
-  background:rgba(255, 91, 92, 0.2);
-      color: #FF5B5C;
+  rgba(90, 141, 238, 0.2);
+      color: #5A8DEE;
   border: 0;
 
 }
