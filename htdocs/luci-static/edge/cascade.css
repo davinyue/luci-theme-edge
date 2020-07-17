@@ -691,6 +691,10 @@ header .fill .status * {
 	font-size:0.9rem;
 	text-align:center;
 }
+.modal .label.warning{
+    background-color: #FDAC41 !important;
+	color:#fff !important;
+}
 .danger {
   background-color: rgba(255, 91, 92, 0.2) !important;
 	color:#FF5B5C !important;
