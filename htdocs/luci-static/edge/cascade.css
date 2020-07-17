@@ -3609,3 +3609,6 @@ h2,.cbi-map-descr{
 .node-admin-status .table .tr .td:first-child{
 	padding-left:3rem !important;
 }
+ul.errors li{
+margin-bottom: 1rem;	
+}
