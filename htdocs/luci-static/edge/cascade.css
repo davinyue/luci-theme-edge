@@ -703,6 +703,10 @@ header .fill .status * {
   background-color: rgba(253, 172, 65, 0.2) !important;
 	color:#FDAC41 !important;
 }
+.modal .warning {
+ color: #fff !important;
+	background-color:#FDAC41 !important;	
+}
 .success {
   background-color: rgba(57, 218, 138, 0.2) !important;
 	color:#39DA8A !important;
