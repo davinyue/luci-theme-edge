@@ -1524,7 +1524,7 @@ ul.tabs,.tabmenu .tabs,#tabmenu .tabs,ul.cbi-tabmenu{
   line-height: 2.4rem;
 }
 .cbi-value-field >*{
-	line-height: 2.2rem;
+	line-height: 1.3rem;
 }
 .cbi-value ul {
   line-height: 1.25;
@@ -1904,7 +1904,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   flex-wrap: wrap;
   width: 90%;
   min-width: 270px;
-  max-width: 600px;
+  max-width: 695px;
   min-height: 32px;
   margin: 25vh auto;
   padding: 1em;
@@ -1955,12 +1955,12 @@ h3+p,h4+p{
   padding: 0.1rem 0.3rem;
   cursor: default;
   border-radius: 0;
-  background: #475F7B;
+  background: #9b9b9b;
     color: #fff;
 }
 .modal .label.notice{
 	color: #fff;
-    background: #9b9b9b;
+    background: #5A8DEE;
 }
 body.modal-overlay-active {
   overflow: hidden;
@@ -2866,6 +2866,9 @@ input[type="checkbox"] {
     opacity: 0;
     pointer-events: none;
 
+}
+.modal input[type="checkbox"]{
+	opacity: 1;
 }
 input[type="checkbox"]:checked {
   border: 1px solid #5A8DEE;
