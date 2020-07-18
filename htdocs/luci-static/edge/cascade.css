@@ -685,9 +685,12 @@ header .fill .status * {
 #xhr_poll_status * {
   color: #fff;
 }
+.modal.alert-message{
+  background-color: #5A8DEE;
+  color:#fff;	
+}
 .modal.alert-message p{
 	font-weight:bold;
-	color:#fff;
 	font-size:0.9rem;
 	text-align:center;
 }
@@ -703,7 +706,7 @@ header .fill .status * {
   background-color: rgba(253, 172, 65, 0.2) !important;
 	color:#FDAC41 !important;
 }
-.modal .warning {
+.modal.warning {
  color: #fff !important;
 	background-color:#FDAC41 !important;	
 }
@@ -711,10 +714,7 @@ header .fill .status * {
   background-color: rgba(57, 218, 138, 0.2) !important;
 	color:#39DA8A !important;
 }
-.notice {
-  background-color: #5A8DEE !important;
 
-}
 .error {
   color: #f00;
 }
@@ -1919,6 +1919,8 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 }
 .modal > pre,
 .modal > textarea {
+  font-size: 1rem;
+  font-size-adjust: 0.35;
   overflow: auto;
   margin-bottom: 0.5em;
   padding: 8.5px;
@@ -2076,8 +2078,7 @@ td > .ifacebadge,
 }
 /* textarea */
 textarea {
-  font-family: inherit;
-	    font-size: inherit;
+  font-family: monospace;
   width: 95%;
   max-height: 18rem;
   min-width:25rem;
