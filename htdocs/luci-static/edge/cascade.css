@@ -1226,7 +1226,6 @@ td > table > tbody > tr > td,
   transition: all 0.2s ease-in-out;
   text-align: center;
   vertical-align: middle;
-  white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.87);
