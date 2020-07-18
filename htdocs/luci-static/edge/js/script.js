@@ -238,8 +238,8 @@ $(".waves-input-wrapper").filter(function () {
 	$("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").after("<span class='focus-input'></span>");
 
 $("input[type='checkbox']").filter(function () {
-  return ($(this).next("label").length)
-}).css({"position":"absolute","opacity":"0","pointer-events":"none"});
+  return (!$(this).next("label").length)
+}).css({"position":"relative","opacity":"1","pointer-events":"auto"});
 
 $("select,input").filter(function () {
   return ($(this).next(".focus-input").length)
