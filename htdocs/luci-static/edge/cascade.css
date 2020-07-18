@@ -3627,3 +3627,6 @@ h2,.cbi-map-descr{
 ul.errors li{
 margin-bottom: 1rem;	
 }
+.Wireless .cbi-section{
+padding:0 2rem;
+}
