@@ -1219,6 +1219,7 @@ td > table > tbody > tr > td,
   width: auto !important;
   padding: 0 0.8rem;
   cursor: pointer;
+   white-space: nowrap;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
