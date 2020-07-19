@@ -222,7 +222,7 @@ document.addEventListener('luci-loaded', function(ev) {
 var config = {
     // How long Waves effect duration 
     // when it's clicked (in milliseconds)
-    duration: 1000
+    duration: 600
 };
     Waves.attach('.cbi-button,.btn', ['waves-light']);
 	// Ripple on hover
