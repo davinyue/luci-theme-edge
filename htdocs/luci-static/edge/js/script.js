@@ -235,7 +235,10 @@ $('.cbi-button,.btn').mouseenter(function() {
 $(".waves-input-wrapper").filter(function () {
   return ($(this).children().is(":hidden"))
 }).hide();
-	$("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").after("<span class='focus-input'></span>");
+
+$("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").filter(function () {
+return (!$(this).parents(".cbi-dynlist").length)
+}).after("<span class='focus-input'></span>");
 
 $("input[type='checkbox']").filter(function () {
   return (!$(this).next("label").length)
@@ -252,7 +255,9 @@ $("select,input").filter(function () {
 
 var options = { attributes: true};
 function callback() {
-		$("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").after("<span class='focus-input'></span>");
+$("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").filter(function () {
+return (!$(this).parents(".cbi-dynlist").length)
+}).after("<span class='focus-input'></span>");
 $("select,input").filter(function () {
   return ($(this).next(".focus-input").length)
 }).focus(function(){
