@@ -2099,7 +2099,6 @@ textarea {
 #syslog {
   font-size: small;
   line-height: 1.25;
-  overflow-y: hidden;
   width: 100%;
   min-height: 15rem;
   padding: 1rem;
