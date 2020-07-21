@@ -1193,7 +1193,7 @@ div > .table > .tr:nth-of-type(2n):hover {
 }
 div > table > tbody > tr:nth-of-type(3n),
 div > .table > .tr:nth-of-type(3n) {
-  background-color: rgba(223, 56, 18, 0.05);
+  background-color: rgba(223, 56, 18, 0.04);
 }
 div > table > tbody > tr:nth-of-type(3n):hover,
 div > .table > .tr:nth-of-type(3n):hover {
