@@ -1521,7 +1521,7 @@ ul.tabs,.tabmenu .tabs,#tabmenu .tabs,ul.cbi-tabmenu{
 .cbi-value {
   display: inline-block;
   width: 100%;
-  padding: 0.35rem 1rem 0.2rem 1rem;
+  padding: 0.35rem 1rem 0.35rem 1rem;
   line-height: 2.4rem;
 }
 .cbi-value-field >*{
