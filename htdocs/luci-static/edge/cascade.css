@@ -1165,6 +1165,7 @@ tr > th,
 .cbi-section-table-row > .cbi-value-field .cbi-input-text,
 .cbi-section-table-row > .cbi-value-field .cbi-input-password {
   width: 100%;
+min-width:0 !important;
 }
 .cbi-section-table-row > .cbi-value-field [data-dynlist] > input,
 .cbi-section-table-row > .cbi-value-field input.cbi-input-password {
