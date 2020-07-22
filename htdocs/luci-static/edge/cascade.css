@@ -3628,3 +3628,6 @@ margin-bottom: 1rem;
 .Wireless .cbi-section{
 padding:0 2rem;
 }
+.cbi-section-table-row > .cbi-value-field .cbi-input-select {
+    min-width: 5rem !important;
+}
