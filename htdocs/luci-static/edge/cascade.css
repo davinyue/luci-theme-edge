@@ -619,7 +619,6 @@ p{
   position: relative;
   z-index: 50;
   margin-top: 2rem;
-  overflow:hidden;
 }
 .pull-right {
   float: right;
