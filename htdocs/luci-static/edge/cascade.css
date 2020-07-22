@@ -422,7 +422,6 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     border-bottom: 1px solid #9e9e9e;
     border-radius: 0;
     outline: none;
-    width: 100%;
     margin: 0;
     padding: 0;
     -webkit-box-shadow: none;
