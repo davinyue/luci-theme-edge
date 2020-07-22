@@ -388,7 +388,7 @@ body {
   margin: 0;
   padding: 0;
 background-color: #fff;
-overflow: hidden;
+overflow-x: hidden;
 }
 select {
   padding: 0.36rem 0.8rem;
