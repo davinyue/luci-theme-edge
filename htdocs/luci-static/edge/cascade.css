@@ -3584,6 +3584,7 @@ input[type=button],input[type=submit],input[type=reset]{
   .btn,button,
   .cbi-button,input[type=button],input[type=submit],input[type=reset] {
     padding: 0.6rem 1.6rem;
+	      line-height: 1rem;
   }
 i.waves-input-wrapper{
 	padding: 0 !important;
@@ -3630,4 +3631,10 @@ padding:0 2rem;
 #status_tcp_node .red{
 	font-size: 0.83rem !important;
     line-height: 2rem;
+}
+.waves-input-wrapper .waves-button-input{
+	line-height: 1rem;
+}
+.cbi-dropdown.waves-effect{
+	display: inline-flex;
 }
