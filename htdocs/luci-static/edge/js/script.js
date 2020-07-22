@@ -224,9 +224,9 @@ var config = {
     // when it's clicked (in milliseconds)
     duration: 600
 };
-    Waves.attach('.cbi-button,.btn', ['waves-light']);
+    Waves.attach(".cbi-button,.btn,button,input[type='button'],input[type='reset'],input[type='submit']", ['waves-light']);
 	// Ripple on hover
-$('.cbi-button,.btn').mouseenter(function() {
+$(".cbi-button,.btn,button,input[type='button'],input[type='reset'],input[type='submit']").mouseenter(function() {
     Waves.ripple(this, {wait: null});
 }).mouseleave(function() {
     Waves.calm(this);
@@ -251,7 +251,7 @@ $("select,input").filter(function () {
 }).blur(function(){
   $(this).css("border-bottom","1px solid #9e9e9e");
 });
-	}, 100);
+	}, 400);
 
 var options = { attributes: true};
 function callback() {
