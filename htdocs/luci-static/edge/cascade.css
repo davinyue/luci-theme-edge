@@ -2399,6 +2399,7 @@ input[name="nslookup"] {
 .node-main-login .main .main-right {
   width: 100%;
   text-align:center;
+overflow: hidden;
 }
 .node-main-login .main .main-right header {
   background: none !important;
@@ -2430,7 +2431,6 @@ input[name="nslookup"] {
   background-color: transparent !important;
   text-align: center;
   display:inline-block;
-  position:relative;
   z-index:999;
 }
 .node-main-login .main .main-right #maincontent .container {
