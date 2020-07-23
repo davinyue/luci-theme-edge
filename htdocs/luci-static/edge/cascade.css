@@ -1499,7 +1499,6 @@ ul.tabs,.tabmenu .tabs,#tabmenu .tabs,ul.cbi-tabmenu{
 .cbi-value-description {
   font-size: small;
   padding: 0.4rem 0;
-  opacity: 0.6;
   line-height: inherit !important;
 }
 
