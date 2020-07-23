@@ -3643,3 +3643,7 @@ padding:0 2rem;
 #cbi-AdGuardHome-AdGuardHome .waves-input-wrapper>input{
 	color:#fff !important;
 }
+input[type=password]+.cbi-button.cbi-button-neutral{	
+	padding: 0.1rem 0.4rem;
+	color:#fff !important;
+}
