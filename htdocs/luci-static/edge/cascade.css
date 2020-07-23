@@ -3661,3 +3661,6 @@ input[type=password]+.cbi-button.cbi-button-neutral{
     border: none;
     opacity: 0.9;
 }
+div[id^="cbi-unblockmusic"] .cbi-button{
+	top:-1.2rem;
+}
