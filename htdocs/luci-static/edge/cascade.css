@@ -3647,3 +3647,13 @@ input[type=password]+.cbi-button.cbi-button-neutral{
 	padding: 0.1rem 0.4rem;
 	color:#fff !important;
 }
+.main-right>hr{
+    height: 6px;
+    background-color: rgba(255, 0, 27, 0.95);
+    background: linear-gradient(90deg,#e75239 0%,#e75239 12.5%,#ff961c 12.5%,#ff961c 25%,#ffcc27 25%,#ffcc27 37.5%,#fce62f 37.5%,#fce62f 50%,#cde35b 50%,#cde35b 62.5%,#82cc33 62.5%,#82cc33 75%,#41bece 75%,#41bece 87.5%,#049cdb 87.5%,#049cdb 100%);
+	background-position: 50% 0;
+     box-shadow: 0 1px 2px rgba(0,0,0,.0625) inset;
+    margin: 0 0 10px;
+    border: none;
+    opacity: 0.9;
+}
