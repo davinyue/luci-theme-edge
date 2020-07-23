@@ -3630,7 +3630,7 @@ padding:0 2rem;
 .cbi-section-table-row > .cbi-value-field .cbi-input-select {
     min-width: 5rem !important;
 }
-#status_tcp_node .red{
+#cbi-passwall .status .red{
 	font-size: 0.83rem !important;
     line-height: 2rem;
 }
