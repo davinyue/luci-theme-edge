@@ -1248,9 +1248,6 @@ td > table > tbody > tr > td,
 .cbi-button:not(select) {
   -webkit-appearance: none !important;
 }
-.cbi-button + .cbi-button {
-  margin-left: 0.6rem;
-}
 .btn:hover,
 .btn:focus,
 .btn:active,
@@ -1316,7 +1313,6 @@ button:hover,
 .cbi-page-actions .cbi-button-apply + .cbi-button-save,
 .cbi-button-add,
 .cbi-button-save,
-.cbi-button-positive,
 .cbi-button-link,
 .cbi-button[value="Enable"],
 .cbi-button[value="Scan"],
@@ -1346,6 +1342,7 @@ button:hover,
 .btn.danger,
 .cbi-section-remove > .cbi-button,
 .cbi-button-remove,
+.cbi-button-positive,
 .cbi-button-reset,
 .cbi-button-negative,
 .cbi-button[value="Stop"],
@@ -3570,7 +3567,7 @@ background-color:white !important;
 	color:#404040
 }
 input,select{
-height: 2rem;
+height: 2.2rem;
 
 }
 
@@ -3584,11 +3581,19 @@ height: 2rem;
 	border-radius: 2px;
 	transition:all .20s linear;
 	  top:0;
+	  margin-left: 0.5rem;
+	  margin-top:0.5rem;
+  }
+  .btn:first-child,button:first-child,
+  .cbi-button:first-child,input[type=button]:first-child,input[type=submit]:first-child,input[type=reset]:first-child,.waves-input-wrapper:first-child {
+	  margin-left:0;
   }
 i.waves-input-wrapper{
 	padding: 0 !important;
 }
-
+i input{
+	margin:0 !important
+}
 .controls > * > .btn{
 	flex-basis: auto !important;
 }
