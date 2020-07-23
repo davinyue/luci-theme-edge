@@ -3632,7 +3632,7 @@ padding:0 2rem;
 .cbi-section-table-row > .cbi-value-field .cbi-input-select {
     min-width: 5rem !important;
 }
-#cbi-passwall .status .red{
+#cbi-passwall .status .red, #cbi-passwall .status .green {
 	font-size: 0.83rem !important;
     line-height: 2rem;
 }
