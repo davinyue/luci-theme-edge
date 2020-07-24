@@ -1136,7 +1136,6 @@ tr > th,
 .tr.table-titles > .th,
 .tr.cbi-section-table-titles > .th {
   border-top: 0 !important;
-  background-color: #f6f9fc;
   padding: 1.1em 1rem;
   line-height: 1.3rem;
 }
