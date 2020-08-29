@@ -1,16 +1,16 @@
 <%#
-	edge is a clean HTML5 theme for LuCI. It is based on luci-theme-material edge Template
+	Edge is a clean HTML5 theme for LuCI. It is based on luci-theme-material edge Template
 
-	luci-theme-edge
-	Copyright 2019 Jerrykuku <jerrykuku@qq.com>
+	luci-theme-Edge
+	Copyright 2020 GaryPang <garyp@qq.com>
 
 	Have a bug? Please create an issue here on GitHub!
-	https://github.com/jerrykuku/luci-theme-edge/issues 
+	https://github.com/garypang13/luci-theme-edge/issues 
 
-	luci-theme-material: 
-	Copyright 2015 Lutty Yang <lutty@wcan.in>
+	luci-theme-Argon: 
+	Copyright 2019 Jerrykuku <jerrykuku@qq.com>
 	
-	Agron Theme
+	Edge Theme
 	https://demos.creative-tim.com/edge-dashboard/index.html 
 
 	Licensed to the public under the Apache License 2.0
@@ -71,8 +71,8 @@
 	<link rel="icon" href="<%=media%>/logo.png" sizes="144x144">
 	<link rel="apple-touch-icon-precomposed" href="<%=media%>/logo.png" sizes="144x144">
 	<link rel="stylesheet" href="<%=media%>/landscape.css">
-	<link rel="stylesheet" href="<%=media%>/waves.css?v=1.3">
-	<link rel="stylesheet" href="<%=media%>/cascade.css?v=2.1">
+	<link rel="stylesheet" href="<%=media%>/waves.css">
+	<link rel="stylesheet" href="<%=media%>/cascade.css">
 	<link rel="shortcut icon" href="<%=media%>/favicon.ico">
 	<% if node and node.css then %>
 	<link rel="stylesheet" href="<%=resource%>/<%=node.css%>">
@@ -82,10 +82,10 @@
 		<%=css %>
 	</style>
 	<% end -%>
-	<script src="<%=url('admin/translations', luci.i18n.context.lang)%>?v=2.1"></script>
-	<script src="<%=resource%>/cbi.js?v=2.1"></script>
-	<script src="<%=resource%>/luci.js?v=2.1"></script>
-	<script src="<%=media%>/js/jquery.min.js?v=2.1"></script>
+	<script src="<%=url('admin/translations', luci.i18n.context.lang)%>"></script>
+	<script src="<%=resource%>/cbi.js"></script>
+	<script src="<%=resource%>/luci.js"></script>
+	<script src="<%=media%>/js/jquery.min.js"></script>
 	<script type="text/javascript">//<![CDATA[
 		(function () {
 			function get_children(node) {
