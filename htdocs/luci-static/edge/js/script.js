@@ -233,7 +233,11 @@ $(".cbi-button,.btn,button,input[type='button'],input[type='reset'],input[type='
 });
   Waves.init(config);
 $(".waves-input-wrapper").filter(function () {
-  return ($(this).children().is(":hidden"))
+  if($(this).children().css("display")=="none"){
+        return true;
+    }else{
+        return false;
+    }
 }).hide();
 
 $("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").filter(function () {
