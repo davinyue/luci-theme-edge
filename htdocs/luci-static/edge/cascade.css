@@ -38,18 +38,12 @@
 
 @font-face {
   font-family: 'argon';
-  src: url('fonts/argon.eot?vncylf');
-  src: url('fonts/argon.eot?vncylf#iefix') format('embedded-opentype'), url('fonts/argon.ttf?vncylf') format('truetype'), url('fonts/argon.woff?vncylf') format('woff'), url('fonts/argon.svg?vncylf#argon') format('svg');
+  src: url('fonts/argon.woff?vncylf') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-@font-face {
-  font-family: 'TypoGraphica';
-  src: url('fonts/TypoGraphica.eot?#iefix') format('embedded-opentype'), url('fonts/TypoGraphica.woff') format('woff'), url('fonts/TypoGraphica.ttf') format('truetype'), url('fonts/TypoGraphica.svg#TypoGraphica') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
