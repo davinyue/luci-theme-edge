@@ -1184,12 +1184,12 @@ min-width:0 !important;
 }
 
 table > tbody > tr,
-div > .table > .tr {
+div > .table > .tr,.cbi-map >.cbi-section .cbi-value {
 	 background-color: #fff;
   transition: background-color .25s
 }
 table > tbody > tr:nth-of-type(4n+2),
-div > .table > .tr:nth-of-type(4n+2) {
+div > .table > .tr:nth-of-type(4n+2),.cbi-map >.cbi-section .cbi-value:nth-of-type(2n) {
 background-color: #e5effd;
 }
 table > tbody > tr:nth-of-type(4n+2):hover,
@@ -1203,6 +1203,12 @@ div > .table > .tr:nth-of-type(4n) {
 table > tbody > tr:nth-of-type(4n):hover,
 div > .table > .tr:nth-of-type(4n):hover {
   background-color: rgba(223, 56, 18, 0.09);
+}
+.cbi-map >.cbi-section .cbi-value:nth-of-type(2n) {
+background-color: #e5effdb8;
+}
+.cbi-map >.cbi-section .cbi-value:nth-of-type(2n):hover {
+background-color: #e5effd;
 }
 
 /* fix multiple table */
