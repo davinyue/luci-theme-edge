@@ -1479,18 +1479,11 @@ ul.tabs,.tabmenu .tabs,#tabmenu .tabs,ul.cbi-tabmenu{
   transition: opacity 0.25s ease-in;
   margin: inherit !important;
 }
-.cbi-section[id] .cbi-section-remove:nth-of-type(4n+3),
-.cbi-section[id] .cbi-section-node:nth-of-type(4n+4) {
-  background-color: #f9f9f9;
-}
 .cbi-section-node-tabbed {
   margin-top: 0;
   padding: 0;
    transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
-}
-.cbi-tabcontainer > .cbi-value:nth-of-type(2n) {
-  background-color: #f9f9f9;
 }
 .cbi-value-field,
 .cbi-value-description {
@@ -3581,7 +3574,7 @@ background-color:white !important;
 }
 input,select{
 height: 2.2rem;
-
+background: none;
 }
 
   .btn,button,
