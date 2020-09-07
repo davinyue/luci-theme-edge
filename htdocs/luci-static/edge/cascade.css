@@ -2515,6 +2515,7 @@ text-align:center;
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value {
   display: block;
   padding: 0;
+background: none;
 }
 .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value * {
   display: inline-block !important;
