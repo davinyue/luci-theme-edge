@@ -293,9 +293,9 @@ var config = {
     // when it's clicked (in milliseconds)
     duration: 600
 };
-    Waves.attach(".cbi-button,.btn,button,input[type='button'],input[type='reset'],input[type='submit']", ['waves-light']);
+    Waves.attach("button,input[type='button'],input[type='reset'],input[type='submit']", ['waves-light']);
 	// Ripple on hover
-$(".cbi-button,.btn,button,input[type='button'],input[type='reset'],input[type='submit']").mouseenter(function() {
+$("button,input[type='button'],input[type='reset'],input[type='submit']").mouseenter(function() {
     Waves.ripple(this, {wait: null});
 }).mouseleave(function() {
     Waves.calm(this);
@@ -303,10 +303,10 @@ $(".cbi-button,.btn,button,input[type='button'],input[type='reset'],input[type='
   Waves.init(config);
 $(".waves-input-wrapper").filter(function () {
   if($(this).children().css("display")=="none"){
-        return true;
-    }else{
-        return false;
-    }
+        return true;
+    }else{
+        return false;
+    }
 }).hide();
 
 $("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").filter(function () {
@@ -344,5 +344,6 @@ $("input[type='checkbox']").filter(function () {
 }
 var mutationObserver = new MutationObserver(callback);
  mutationObserver.observe($("body")[0], options);
+ $(".cbi-value").has("textarea").css("background","none");
 })(jQuery);
 });
