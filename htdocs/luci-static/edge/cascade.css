@@ -3683,6 +3683,3 @@ div[id^="cbi-unblockmusic"] .cbi-button{
 [data-page^="admin-network-wifi"] form td{
 	padding-left: 1.5rem;
 }
-body[data-page^="admin-network-wifi"] form td{
-	padding-left: 1.5rem;
-}
