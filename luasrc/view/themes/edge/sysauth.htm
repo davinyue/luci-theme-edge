@@ -15,6 +15,14 @@ setTimeout(function(){
 var sound = document.getElementById("player");
 sound.setAttribute('src','https://cdn.jsdelivr.net/gh/kkkidding/custom2@master/audio.ogg');
 },0);
+     setTimeout(function(){
+   if (!$('#player')[0].paused) {
+         $('.speaker').addClass('speakerplay');
+         getaudio.load();
+         getaudio.play();
+         audiostatus = 'on';
+       }
+}, 300); 
 </script>
 
 <!-- partial -->
