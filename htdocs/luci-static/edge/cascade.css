@@ -2019,6 +2019,9 @@ body.modal-overlay-active #modal_overlay {
   text-align: right;
   padding-right:2rem;
 }
+.node-main-login .cbi-page-actions {
+	padding-right:0;
+}
 .cbi-page-actions > form[method="post"] {
   display: inline-block;
 }
