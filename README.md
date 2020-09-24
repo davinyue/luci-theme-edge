@@ -1,4 +1,4 @@
-# luci-theme-edge ([中文](/README_ZH.md))
+# luci-theme-edge
 
 [1]: https://img.shields.io/badge/license-MIT-brightgreen.svg
 [2]: /LICENSE
