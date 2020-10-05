@@ -1493,7 +1493,6 @@ ul.tabs,.tabmenu .tabs,#tabmenu .tabs,ul.cbi-tabmenu{
 }
 .cbi-value-field,
 .cbi-value-description {
-  line-height: 1.25;
   display: table-cell;
   position: relative;
     margin-top: 1rem;
