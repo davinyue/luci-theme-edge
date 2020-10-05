@@ -1505,8 +1505,6 @@ ul.tabs,.tabmenu .tabs,#tabmenu .tabs,ul.cbi-tabmenu{
   color: var(--gray-dark);
 }
 .cbi-value-description {
-  font-size: small;
-  padding: 0.4rem 0;
   line-height: inherit !important;
 }
 
