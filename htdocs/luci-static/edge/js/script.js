@@ -87,9 +87,17 @@ document.addEventListener('luci-loaded', function(ev) {
 	/**
 	 * menu click
 	 */
+	/**
+	 * menu click
+	 */
 	$(".main > .main-left > .nav > .slide > .menu").click(function () {
 		var ul = $(this).next(".slide-menu");
 		var menu = $(this);
+		$(".main > .main-left > .nav > .slide > .menu").each(function () {
+			var ulNode = $(this);
+			ulNode.removeClass("active");
+			ulNode.next(".slide-menu").stop(true).slideUp("fast")
+		});
 		if (!ul.is(":visible")) {
 			menu.addClass("active");
 			ul.addClass("active");
