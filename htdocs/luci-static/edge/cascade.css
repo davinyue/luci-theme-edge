@@ -2101,7 +2101,6 @@ textarea {
   font-size: small;
   line-height: 1.25;
   width: 100%;
-  min-height: 15rem;
   padding: 1rem;
   resize: none;
   color: #eee;
@@ -3549,15 +3548,6 @@ code,.cbi-progressbar::after{
 [data-page="admin-system-flash"] legend{
 	font-size: 1.1rem !important;
      padding-bottom:0.6rem !important;
-}
-
-.main .main-left .nav li.slide .menu[data-title=Docker]:before {
-  content: "\e911";
-  color: #6699ff;
-}
-.main .main-left .nav li.slide .menu[data-title="Bandwidth Monitor"]:before {
-  content: "\e90d";
-  color: #01e501d4;
 }
 .main .main-left .nav li.slide .menu::before{
 	font-size:1.1rem !important;
