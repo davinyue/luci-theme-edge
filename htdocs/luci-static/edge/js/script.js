@@ -310,7 +310,7 @@ $(".waves-input-wrapper").filter(function () {
 }).hide();
 
 $("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").filter(function () {
-return (!$(this).parents(".cbi-dynlist").length)
+return (!$(this).parents(".cbi-dynlist").length&&!$("body.Diagnostics").length)
 }).after("<span class='focus-input'></span>");
 
 $("input[type='checkbox']").filter(function () {
