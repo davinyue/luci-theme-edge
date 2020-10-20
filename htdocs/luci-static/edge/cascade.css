@@ -769,13 +769,13 @@ color: #5A8DEE;
   color: #5f6368;
   color: var(--menu-color);
 }
-.main .main-left .nav li.slide {
+.main .main-left .nav li {
   padding: 0;
 }
-.main .main-left .nav li.slide ul {
+.main .main-left .nav li ul {
   display: none;
 }
-.main .main-left .nav li.slide .menu {
+.main .main-left .nav li .menu {
   display: block;
   margin: 0.1rem 0.5rem 0.1rem 0.5rem;
   padding: 0.675rem 0 0.675rem 2.5rem;
@@ -787,28 +787,28 @@ color: #5A8DEE;
   transition: all 0.2s;
   position: relative;
 }
-.main .main-left .nav li.slide .menu.active {
+.main .main-left .nav li .menu.active {
   color: #fff;
   background: #5A8DEE;
   
 }
-.main .main-left .nav li.slide .menu.active::before {
+.main .main-left .nav li .menu.active::before {
   color: #fff !important;
 }
-.main .main-left .nav li.slide .menu.active::after {
+.main .main-left .nav li .menu.active::after {
   transform: rotate(90deg);
   color: #fff !important;
 }
-.main .main-left .nav li.slide .menu:hover {
+.main .main-left .nav li .menu:hover {
   cursor: pointer;
   color: #fff;
   background: #5A8DEE;
   
 }
-.main .main-left .nav li.slide .menu:hover::before {
+.main .main-left .nav li .menu:hover::before {
   color: #fff !important;
 }
-.main .main-left .nav li.slide .menu::before {
+.main .main-left .nav li .menu::before {
   font-family: 'argon' !important;
   font-style: normal;
   font-weight: normal;
@@ -823,7 +823,7 @@ color: #5A8DEE;
   padding-top: 3px;
   transition: all 0.3s;
 }
-.main .main-left .nav li.slide .menu::after {
+.main .main-left .nav li .menu::after {
   position: absolute;
   right: 0.5rem;
   top: 0.8rem;
@@ -842,62 +842,62 @@ color: #5A8DEE;
   -webkit-font-smoothing: antialiased;
   transition: all 0.3s;
 }
-.main .main-left .nav li.slide .menu[data-title=Status]:before {
+.main .main-left .nav li .menu[data-title=Status]:before {
   content: "\e906";
   color: #5e72e4;
 }
-.main .main-left .nav li.slide .menu[data-title=System]:before {
+.main .main-left .nav li .menu[data-title=System]:before {
   content: "\e90a";
   color: #fb6340;
 }
-.main .main-left .nav li.slide .menu[data-title=Services]:before {
+.main .main-left .nav li .menu[data-title=Services]:before {
   content: "\e909";
   color: #11cdef;
 }
-.main .main-left .nav li.slide .menu[data-title=NAS]:before {
+.main .main-left .nav li .menu[data-title=NAS]:before {
   content: "\e90c";
   color: #f3a4b5;
 }
-.main .main-left .nav li.slide .menu[data-title=VPN]:before {
+.main .main-left .nav li .menu[data-title=VPN]:before {
   content: "\e90b";
   color: #8965e0;
 }
-.main .main-left .nav li.slide .menu[data-title=Network]:before {
+.main .main-left .nav li .menu[data-title=Network]:before {
   content: "\e908";
   color: #8965e0;
 }
-.main .main-left .nav li.slide .menu[data-title=Bandwidth_Monitor]:before {
+.main .main-left .nav li .menu[data-title=Bandwidth_Monitor]:before {
   content: "\e90d";
   color: #2dce89;
 }
-.main .main-left .nav li.slide .menu[data-title=Docker]:before {
+.main .main-left .nav li .menu[data-title=Docker]:before {
   content: "\e911";
   color: #6699ff;
 }
-.main .main-left .nav li.slide .menu[data-title=Statistics]:before {
+.main .main-left .nav li .menu[data-title=Statistics]:before {
   content: "\e913";
   color: #8965e0;
 }
-.main .main-left .nav li.slide .menu[data-title=Control]:before {
+.main .main-left .nav li .menu[data-title=Control]:before {
   content: "\e912";
   color: #5e72e4;
 }
-.main .main-left .nav li.slide .menu[data-title=Asterisk]:before {
+.main .main-left .nav li .menu[data-title=Asterisk]:before {
   content: "\e914";
   color: #fb6340;
 }
-.main .main-left .nav li.slide .menu[data-title=Logout]:before {
+.main .main-left .nav li .menu[data-title=Logout]:before {
   content: "\e907";
   color: #adb5bd;
 }
-.main .main-left .nav li.slide:hover {
+.main .main-left .nav li:hover {
   background: none;
 }
-.main .main-left .nav li.slide .slide-menu {
+.main .main-left .nav li .slide-menu {
   margin: 0 0.5rem 0 2.5rem;
   padding: 0rem 0.5rem;
 }
-.main .main-left .nav li.slide .slide-menu li {
+.main .main-left .nav li .slide-menu li {
   position: relative;
 
     border-radius: 2px;
@@ -905,11 +905,11 @@ color: #5A8DEE;
   padding: 0.5rem 0rem;
   background: none;
 }
-.main .main-left .nav li.slide .slide-menu li a {
+.main .main-left .nav li .slide-menu li a {
   white-space: nowrap;
   text-decoration: none;
 }
-.main .main-left .nav li.slide .slide-menu li::after {
+.main .main-left .nav li .slide-menu li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -919,20 +919,20 @@ color: #5A8DEE;
   background-color: #5A8DEE;
   transition: all 0.2s;
 }
-.main .main-left .nav li.slide .slide-menu li:hover {
+.main .main-left .nav li .slide-menu li:hover {
   background: none;
 }
-.main .main-left .nav li.slide .slide-menu li:hover::after {
+.main .main-left .nav li .slide-menu li:hover::after {
   width: 100%;
 }
-.main .main-left .nav li.slide .slide-menu .active {
+.main .main-left .nav li .slide-menu .active {
   background: none;
   color: var(--menu-color);
 }
-.main .main-left .nav li.slide .slide-menu .active a {
+.main .main-left .nav li .slide-menu .active a {
   color: var(--menu-color);
 }
-.main .main-left .nav li.slide .slide-menu .active::after {
+.main .main-left .nav li .slide-menu .active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -942,10 +942,10 @@ color: #5A8DEE;
   background-color: #5A8DEE;
   transition: all 0.2s;
 }
-.main .main-left .nav li.slide .slide-menu .active:hover {
+.main .main-left .nav li .slide-menu .active:hover {
   background: none;
 }
-.main .main-left .nav li.slide .slide-menu .active:hover::after {
+.main .main-left .nav li .slide-menu .active:hover::after {
   width: 100%;
 }
 .lg {
@@ -3530,13 +3530,13 @@ position:relative;
 h2 {
     font-size: 1.4rem !important;
 }
-.main .main-left .nav li.slide .menu{
+.main .main-left .nav li .menu{
 	font-size:0.9rem !important;
 	margin-top: 0.4rem !important;
 	margin-bottom: 0.4rem !important;
 	padding: 0.5rem 0 0.5rem 2.5rem !important;
 }
-.main .main-left .nav li.slide .slide-menu li{
+.main .main-left .nav li .slide-menu li{
 	padding: 0.4rem 0rem !important;
 }
 
@@ -3553,7 +3553,7 @@ code,.cbi-progressbar::after{
 	font-size: 1.1rem !important;
      padding-bottom:0.6rem !important;
 }
-.main .main-left .nav li.slide .menu::before{
+.main .main-left .nav li .menu::before{
 	font-size:1.1rem !important;
 }
 .td.version{
