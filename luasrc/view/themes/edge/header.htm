@@ -110,34 +110,29 @@
 
 			function render_mainmenu(tree, url, level) {
 				var l = (level || 0) + 1,
-					ul = E('ul', { 'class': level ? 'slide-menu' : 'nav' }),
-					children = get_children(tree);
+				    ul = EF('ul', { 'class': level ? 'slide-menu' : 'nav' }),
+				    children = get_children(tree);
 				if (children.length == 0 || l > 2)
-					return E([]);
-
+					return EF([]);
 				for (var i = 0; i < children.length; i++) {
 					var submenu = render_mainmenu(children[i], url + '/' + children[i].name, l),
-						hasChildren = submenu.children.length;
-						isLogout = (children[i].name == 'logout');
-					ul.appendChild(E('li', { 'class': hasChildren ? 'slide' : isLogout ? 'lg' : null }, [
-						E('a', {
+					    hasChildren = submenu.children.length;
+					ul.appendChild(EF('li', { 'class': hasChildren ? 'slide' : null }, [
+						EF('a', {
 							'href': hasChildren ? '#' : L.url(url, children[i].name),
-							'class': hasChildren ? 'menu' : isLogout?"logout":null,
-							'data-title': children[i].title,
-						}, [_(children[i].title)]),
+							'class': hasChildren ? 'menu' : null,
+							'data-title': hasChildren ?  children[i].title.replace(" ", "_") :  children[i].title.replace(" ", "_"),
+						}, [ _(children[i].title) ]),
 						submenu
 					]));
+				}
+				if (l == 1) {
+					var container = document.querySelector('#mainmenu');
+					container.appendChild(ul);
+					container.style.display = '';
+				}
+				return ul;
 			}
-
-			if (l == 1) {
-				var container = document.querySelector('#mainmenu');
-
-				container.appendChild(ul);
-				container.style.display = '';
-			}
-
-			return ul;
-		}
 
 			function render_modemenu(tree) {
 			var ul = document.querySelector('#modemenu'),
