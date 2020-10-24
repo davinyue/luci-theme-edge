@@ -3653,15 +3653,14 @@ input[type="reset"],
   border-radius: 2px;
   transition: all 0.2s linear;
   top: 0;
-  margin-left: 0.5rem;
 }
-* + .btn,
-* + button,
-* + .cbi-button,
-* + input[type="button"],
-* + input[type="submit"],
-* + input[type="reset"],
-* + .waves-input-wrapper {
+:not(script) + .btn,
+:not(script) + button,
+:not(script) + .cbi-button,
+:not(script) + input[type="button"],
+:not(script) + input[type="submit"],
+:not(script) + input[type="reset"],
+:not(script) + .waves-input-wrapper {
   margin-left: 0.5rem;
 }
 .btn:first-child,
