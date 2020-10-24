@@ -842,47 +842,47 @@ color: #5A8DEE;
   -webkit-font-smoothing: antialiased;
   transition: all 0.3s;
 }
-.main .main-left .nav li a[data-title=Status]:before {
+.main .main-left .nav li .menu[data-title=Status]:before {
   content: "\e906";
   color: #5e72e4;
 }
-.main .main-left .nav li a[data-title=System]:before {
+.main .main-left .nav li .menu[data-title=System]:before {
   content: "\e90a";
   color: #fb6340;
 }
-.main .main-left .nav li a[data-title=Services]:before {
+.main .main-left .nav li .menu[data-title=Services]:before {
   content: "\e909";
   color: #11cdef;
 }
-.main .main-left .nav li a[data-title=NAS]:before {
+.main .main-left .nav li .menu[data-title=NAS]:before {
   content: "\e90c";
   color: #f3a4b5;
 }
-.main .main-left .nav li a[data-title=VPN]:before {
+.main .main-left .nav li .menu[data-title=VPN]:before {
   content: "\e90b";
   color: #8965e0;
 }
-.main .main-left .nav li a[data-title=Network]:before {
+.main .main-left .nav li .menu[data-title=Network]:before {
   content: "\e908";
   color: #8965e0;
 }
-.main .main-left .nav li a[data-title=Bandwidth_Monitor]:before {
+.main .main-left .nav li .menu[data-title=Bandwidth_Monitor]:before {
   content: "\e90d";
   color: #2dce89;
 }
-.main .main-left .nav li a[data-title=Docker]:before {
+.main .main-left .nav li .menu[data-title=Docker]:before {
   content: "\e911";
   color: #6699ff;
 }
-.main .main-left .nav li a[data-title=Statistics]:before {
+.main .main-left .nav li .menu[data-title=Statistics]:before {
   content: "\e913";
   color: #8965e0;
 }
-.main .main-left .nav li a[data-title=Control]:before {
+.main .main-left .nav li .menu[data-title=Control]:before {
   content: "\e912";
   color: #5e72e4;
 }
-.main .main-left .nav li a[data-title=Asterisk]:before {
+.main .main-left .nav li .menu[data-title=Asterisk]:before {
   content: "\e914";
   color: #fb6340;
 }
@@ -2927,12 +2927,6 @@ input[type="checkbox"]:checked {
   }
   #cbi-firewall-zone .cbi-input-select {
     min-width: 4rem;
-  }
-  .main > .main-left > .nav > li,
-  .main > .main-left > .nav > li a,
-  .main > .main-left > .nav > .slide > .menu,
-  .main > .main-left > .nav > li > [data-title="Logout"] {
-    font-size: 0.9rem;
   }
   .main > .main-left > .nav > .slide > .slide-menu > li > a {
     font-size: 0.8rem;
