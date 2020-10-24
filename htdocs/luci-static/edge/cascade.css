@@ -775,7 +775,7 @@ color: #5A8DEE;
 .main .main-left .nav li ul {
   display: none;
 }
-.main .main-left .nav li .menu {
+.main .main-left .nav>li>a {
   display: block;
   margin: 0.1rem 0.5rem 0.1rem 0.5rem;
   padding: 0.675rem 0 0.675rem 2.5rem;
@@ -799,16 +799,16 @@ color: #5A8DEE;
   transform: rotate(90deg);
   color: #fff !important;
 }
-.main .main-left .nav li .menu:hover {
+.main .main-left .nav>li>a:first-child:hover {
   cursor: pointer;
   color: #fff;
   background: #5A8DEE;
   
 }
-.main .main-left .nav li .menu:hover::before {
+.main .main-left .nav>li>a:first-child:hover::before {
   color: #fff !important;
 }
-.main .main-left .nav li .menu::before {
+.main .main-left .nav>li>a:first-child::before {
   font-family: 'argon' !important;
   font-style: normal;
   font-weight: normal;
@@ -842,51 +842,51 @@ color: #5A8DEE;
   -webkit-font-smoothing: antialiased;
   transition: all 0.3s;
 }
-.main .main-left .nav li .menu[data-title=Status]:before {
+.main .main-left .nav li a[data-title=Status]:before {
   content: "\e906";
   color: #5e72e4;
 }
-.main .main-left .nav li .menu[data-title=System]:before {
+.main .main-left .nav li a[data-title=System]:before {
   content: "\e90a";
   color: #fb6340;
 }
-.main .main-left .nav li .menu[data-title=Services]:before {
+.main .main-left .nav li a[data-title=Services]:before {
   content: "\e909";
   color: #11cdef;
 }
-.main .main-left .nav li .menu[data-title=NAS]:before {
+.main .main-left .nav li a[data-title=NAS]:before {
   content: "\e90c";
   color: #f3a4b5;
 }
-.main .main-left .nav li .menu[data-title=VPN]:before {
+.main .main-left .nav li a[data-title=VPN]:before {
   content: "\e90b";
   color: #8965e0;
 }
-.main .main-left .nav li .menu[data-title=Network]:before {
+.main .main-left .nav li a[data-title=Network]:before {
   content: "\e908";
   color: #8965e0;
 }
-.main .main-left .nav li .menu[data-title=Bandwidth_Monitor]:before {
+.main .main-left .nav li a[data-title=Bandwidth_Monitor]:before {
   content: "\e90d";
   color: #2dce89;
 }
-.main .main-left .nav li .menu[data-title=Docker]:before {
+.main .main-left .nav li a[data-title=Docker]:before {
   content: "\e911";
   color: #6699ff;
 }
-.main .main-left .nav li .menu[data-title=Statistics]:before {
+.main .main-left .nav li a[data-title=Statistics]:before {
   content: "\e913";
   color: #8965e0;
 }
-.main .main-left .nav li .menu[data-title=Control]:before {
+.main .main-left .nav li a[data-title=Control]:before {
   content: "\e912";
   color: #5e72e4;
 }
-.main .main-left .nav li .menu[data-title=Asterisk]:before {
+.main .main-left .nav li a[data-title=Asterisk]:before {
   content: "\e914";
   color: #fb6340;
 }
-.main .main-left .nav li .menu[data-title=Logout]:before {
+.main .main-left .nav li a[data-title=Logout]:before {
   content: "\e907";
   color: #adb5bd;
 }
@@ -948,38 +948,7 @@ color: #5A8DEE;
 .main .main-left .nav li .slide-menu .active:hover::after {
   width: 100%;
 }
-.lg {
-  margin: 0;
-  padding: 0 !important;
-}
-.logout {
-  display: block;
-  margin: 0.8rem 0.5rem 0.1rem 0.5rem;
-  padding: 0.675rem 0 0.675rem 2.5rem;
-   transition: box-shadow .25s, -webkit-box-shadow .25s;
-    border-radius: 2px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.2s;
-  position: relative;
-}
-.logout:before {
-  font-family: 'argon' !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: absolute;
-  left: 0.8rem;
-  padding-top: 3px;
-  transition: all 0.3s;
-  content: "\e907";
-  color: #32325d !important;
-}
+
 body[class*="node-"] > .main > .main-left > .nav > .slide > .menu::before {
   transition: transform 0.1s ease-in-out;
 }
@@ -3530,7 +3499,7 @@ position:relative;
 h2 {
     font-size: 1.4rem !important;
 }
-.main .main-left .nav li .menu{
+.main .main-left .nav>li>a:first-child{
 	font-size:0.9rem !important;
 	margin-top: 0.4rem !important;
 	margin-bottom: 0.4rem !important;
@@ -3553,7 +3522,7 @@ code,.cbi-progressbar::after{
 	font-size: 1.1rem !important;
      padding-bottom:0.6rem !important;
 }
-.main .main-left .nav li .menu::before{
+.main .main-left .nav>li>a:first-child::before{
 	font-size:1.1rem !important;
 }
 .td.version{
