@@ -4078,9 +4078,11 @@ h2,.cbi-map-descr {
 	padding-left: 2rem;
 }
 
+@media screen and (max-width: 1680px) and (min-width: 1280px) {
 .cbi-map >.cbi-section .cbi-section-table,.cbi-map >.cbi-section .cbi-tabmenu,.cbi-map >.cbi-section .table {
 	margin-left: -1.95rem;
 	width: 105.4%
+}
 }
 
 .admin-status-overview h2.content {
