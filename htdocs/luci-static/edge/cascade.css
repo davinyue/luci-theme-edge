@@ -3451,12 +3451,6 @@ input[type="checkbox"]:checked {
 		display: grid;
 	}
 
-	.tr {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
 	.Overview .table[width="100%"] > .tr {
 		flex-wrap: nowrap;
 	}
@@ -3504,14 +3498,6 @@ input[type="checkbox"]:checked {
   .td.cbi-section-table-cell {
 		flex-basis: auto;
 		padding-top: 1rem;
-	}
-
-	.cbi-section-table-row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
 	}
 
 	.td.cbi-value-field,
