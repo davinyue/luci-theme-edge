@@ -1118,7 +1118,7 @@ body[class*="node-"] > .main > .main-left > .nav > .slide > .menu.active::before
 }
 
 #maincontent > .container {
-	padding:0 2%;
+	padding:1rem 2%;
 }
 
 .Overview.node-admin-status #maincontent > .container {
@@ -4032,10 +4032,6 @@ i input {
 
 .controls > * > .btn {
 	flex-basis: auto !important;
-}
-
-h2 {
-	padding-left: 1rem;
 }
 
 
