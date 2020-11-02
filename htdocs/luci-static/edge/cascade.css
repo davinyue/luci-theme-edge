@@ -1118,7 +1118,7 @@ body[class*="node-"] > .main > .main-left > .nav > .slide > .menu.active::before
 }
 
 #maincontent > .container {
-	padding:1rem 2%;
+	padding:0 2%;
 }
 
 .Overview.node-admin-status #maincontent > .container {
