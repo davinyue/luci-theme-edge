@@ -914,6 +914,7 @@ header .fill .status * {
 	cursor: default;
 	transition: all 0.2s;
 	position: relative;
+	font-size: 0.93rem;
 }
 
 .main .main-left .nav li .menu.active {
