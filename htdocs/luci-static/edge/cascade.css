@@ -364,45 +364,6 @@ a {
 	width: 100%;
 }
 
-.col-1 {
-	flex: 1 1 30px !important;
-}
-
-.col-2 {
-	flex: 2 2 60px !important;
-}
-
-.col-3 {
-	flex: 3 3 90px !important;
-}
-
-.col-4 {
-	flex: 4 4 120px !important;
-}
-
-.col-5 {
-	flex: 5 5 150px !important;
-}
-
-.col-6 {
-	flex: 6 6 180px !important;
-}
-
-.col-7 {
-	flex: 7 7 210px !important;
-}
-
-.col-8 {
-	flex: 8 8 240px !important;
-}
-
-.col-9 {
-	flex: 9 9 270px !important;
-}
-
-.col-10 {
-	flex: 10 10 300px !important;
-}
 
 * {
 	box-sizing: border-box;
@@ -3022,11 +2983,6 @@ input[name="nslookup"] {
 	padding-top: 0.1rem;
 }
 
-.td.version,
-.td.size {
-	white-space: normal !important;
-	word-break: break-word;
-}
 
 .cbi-tabmenu + .cbi-section {
 	margin-top: 0;
@@ -3604,14 +3560,6 @@ input[type="checkbox"]:checked {
 		display: inline-block;
 	}
 
-	.main > .main-left > .nav > .slide > .menu {
-		font-size: 1.2rem;
-	}
-
-	.main > .main-left > .nav > .slide > .slide-menu > li > a {
-		font-size: 0.8rem;
-	}
-
 	.cbi-section > div {
 		overflow-x: auto;
 	}
@@ -4152,4 +4100,16 @@ div[id^="cbi-unblockmusic"] .cbi-button {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+}
+
+@media screen and (max-width: 1152px) {
+#packages .tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+
+tr>td, tr>th, .tr>.td, .tr>.th, .cbi-section-table-row::before, #cbi-wireless>#wifi_assoclist_table>.tr:nth-child(2) {
+    padding: 1.1em 2rem;
 }
