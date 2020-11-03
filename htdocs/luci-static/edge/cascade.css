@@ -1414,8 +1414,8 @@ td > table > tbody > tr > td,
 	min-width: 0;
 	padding: 0.2rem 0.3rem;
 	color: transparent !important;
-	background: url(icons/arrow.svg) no-repeat center;
-	background-size: 12px 20px;
+	background: url(icons/arrow.svg) no-repeat center !important;
+	background-size: 12px 20px !important;
 }
 
 .cbi-button-up {
@@ -4115,6 +4115,10 @@ div[id^="cbi-unblockmusic"] .cbi-button {
 }
 [data-page^="admin-network-wifi"] form td {
 	padding-left: 1.5rem;
+}
+
+.cbi-section-table .tr>.td:last-child,#packages .tr>.td:last-child{
+	padding-left:2.5rem;
 }
 
 .command-output {
