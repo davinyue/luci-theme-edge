@@ -4108,8 +4108,7 @@ div[id^="cbi-unblockmusic"] .cbi-button {
     flex-direction: row;
     flex-wrap: wrap;
 }
+#packages .td {
+    padding: 1em 2rem;
 }
-
-tr>td, tr>th, .tr>.td, .tr>.th, .cbi-section-table-row::before, #cbi-wireless>#wifi_assoclist_table>.tr:nth-child(2) {
-    padding: 1.1em 2rem;
 }
