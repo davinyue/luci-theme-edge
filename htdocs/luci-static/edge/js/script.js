@@ -346,4 +346,7 @@ var mutationObserver = new MutationObserver(callback);
  mutationObserver.observe($("body")[0], options);
  $(".cbi-value").has("textarea").css("background","none");
 })(jQuery);
+	setTimeout(function(){
+		 document.getElementById('cbid.adblock.global.adb_sources').click();
+	}, 1000);	
 });
