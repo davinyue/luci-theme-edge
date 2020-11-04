@@ -3193,9 +3193,17 @@ input[type="checkbox"] {
 	padding: 0;
 	cursor: pointer;
 	transition: all 0.2s;
+	
+	pointer-events: none;
+}
+
+input[type="checkbox"][name^="cbid"]{
 	position: absolute;
 	opacity: 0;
-	pointer-events: none;
+}
+
+.cbi-dropdown[open]>ul.dropdown>li label {
+    margin-left: .5rem;
 }
 
 input[type="checkbox"]:checked {
