@@ -355,7 +355,4 @@ var mutationObserver = new MutationObserver(callback);
  }, 800);
  $("input[type='text']")
 })(jQuery);
-	setTimeout(function(){
-		 document.getElementById('cbid.adblock.global.adb_sources').click();
-	}, 800);
 });
