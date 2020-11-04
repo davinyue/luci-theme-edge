@@ -350,9 +350,7 @@ var mutationObserver = new MutationObserver(callback);
 	 setTimeout(function(){
 		 document.getElementById('cbid.adblock.global.adb_sources').click();
 		 }, 100);
- }
- )
+ })
  }, 800);
- $("input[type='text']")
 })(jQuery);
 });
