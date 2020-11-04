@@ -1174,6 +1174,10 @@ h5 {
 	display: none !important;
 }
 
+fieldset.cbi-section{
+border:none;	
+}
+
 fieldset > fieldset,
 .cbi-section > .cbi-section {
 	margin: 0;
