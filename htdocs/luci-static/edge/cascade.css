@@ -3197,7 +3197,7 @@ input[type="checkbox"] {
 	pointer-events: none;
 }
 
-input[type="checkbox"][name^="cbid"]{
+input[type="checkbox"][data-widget-id]{
 	position: absolute;
 	opacity: 0;
 }
