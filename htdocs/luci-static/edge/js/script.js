@@ -345,8 +345,17 @@ $("input[type='checkbox']").filter(function () {
 var mutationObserver = new MutationObserver(callback);
  mutationObserver.observe($("body")[0], options);
  $(".cbi-value").has("textarea").css("background","none");
+ setTimeout(function(){
+ $(".cbi-tabmenu li[data-tab='sources']").click(function(){
+	 setTimeout(function(){
+		 document.getElementById('cbid.adblock.global.adb_sources').click();
+		 }, 100);
+ }
+ )
+ }, 500);
+ $("input[type='text']")
 })(jQuery);
 	setTimeout(function(){
 		 document.getElementById('cbid.adblock.global.adb_sources').click();
-	}, 1000);	
+	}, 500);
 });
