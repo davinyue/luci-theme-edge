@@ -1411,19 +1411,10 @@ td > table > tbody > tr > td,
 button:hover,
 .waves-input-wrapper:hover,
 .btn:hover,
-.btn:focus,
 .cbi-button:hover,
-.cbi-button:focus,
-.item:hover::after,
-.item:focus::after {
+.item:hover::after {
 	opacity: 0.7;
 	top: 0.15rem;
-}
-
-.btn:active,
-.cbi-button:active,
-.item:active::after {
-	opacity: 0.7;
 }
 
 .cbi-button-up:hover,
@@ -2631,8 +2622,8 @@ span[data-tooltip] .label {
 	background-color: #D2FFE8;
 }
 
-label > input[type="checkbox"],
-label > input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
 	position: relative;
 	right: 0.2rem;
 	margin: 0;
