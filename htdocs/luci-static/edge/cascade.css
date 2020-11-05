@@ -1392,22 +1392,6 @@ td > table > tbody > tr > td,
 	-webkit-appearance: none !important;
 }
 
-.btn:hover,
-.btn:focus,
-.btn:active,
-.cbi-button:hover,
-.cbi-button:focus,
-.cbi-button:active,
-.item:hover::after,
-.item:focus::after,
-.item:active::after,
-.cbi-page-actions .cbi-button-apply + .cbi-button-save:hover,
-.cbi-page-actions .cbi-button-apply + .cbi-button-save:focus,
-.cbi-page-actions .cbi-button-apply + .cbi-button-save:active {
-	text-decoration: none;
-	outline: 0;
-}
-
 button:hover,
 .waves-input-wrapper:hover,
 .btn:hover,
@@ -1419,10 +1403,6 @@ button:hover,
 
 .cbi-button-up:hover,
 .cbi-button-up:focus {
-	opacity: 0.7;
-}
-
-.cbi-button-up:active {
 	opacity: 0.7;
 }
 
