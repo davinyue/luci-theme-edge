@@ -3176,12 +3176,12 @@ input[type="checkbox"] {
     margin-left: .5rem;
 }
 
-.cbi-dropdown-open .cbi-dropdown[open] > ul.dropdown{
+#cbi-adblock-global-adb_sources .cbi-dropdown-open .cbi-dropdown[open] > ul.dropdown{
 	position:relative !important;
 	bottom:0 !important;
 }
 
-.cbi-dropdown-open .preview,.cbi-dropdown-open .more,.cbi-dropdown-open .open{
+#cbi-adblock-global-adb_sources .cbi-dropdown-open #cbi-adblock-global-adb_sources .preview,.cbi-dropdown-open .more,.cbi-dropdown-open .open{
 display:none !important;	
 }
 
