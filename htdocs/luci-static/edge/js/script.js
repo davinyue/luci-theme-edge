@@ -329,7 +329,7 @@ $("select,input").filter(function () {
 var options = { attributes: true};
 function callback() {
 $("select,input[type='text'],input[type='email'],input[type='url'],input[type='date'],input[type='datetime'],input[type='tel'],input[type='number'],input[type='search']").filter(function () {
-return (!$(this).parents(".cbi-dynlist").length)
+return (!$(this).parents(".cbi-dynlist").length&&!$(this).filter("[type='password']"))
 }).after("<span class='focus-input'></span>");
 $("select,input").filter(function () {
   return ($(this).next(".focus-input").length)
