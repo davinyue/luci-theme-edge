@@ -16,8 +16,12 @@
   opacity: 0;
   -webkit-transform: scale(1.4) rotate(12deg);
           transform: scale(1.4) rotate(12deg);
-  -webkit-animation: CrossFade 8s infinite;
-          animation: CrossFade 8s infinite;
+  -webkit-animation: CrossFade 12s infinite;
+          animation: CrossFade 12s infinite;
+}
+#CrossFade img:nth-child(3) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 #CrossFade img:nth-child(2) {
   -webkit-animation-delay: 4s;
@@ -29,22 +33,22 @@
 }
 
 @-webkit-keyframes CrossFade {
-  45% {
+  33.3% {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0);
             transform: scale(1) rotate(0);
   }
-  75% {
+  45% {
     opacity: 0;
   }
 }
 @keyframes CrossFade {
-  45% {
+  33.3% {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0);
             transform: scale(1) rotate(0);
   }
-  75% {
+  45% {
     opacity: 0;
   }
 }
